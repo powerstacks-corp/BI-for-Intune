@@ -114,16 +114,16 @@ Many organizations align their hardware lifecycle strategy with warranty coverag
 Extending the use of computers beyond their warranty period can lead to increased costs. These costs stem from higher failure rates, increased maintenance expenses, and potential productivity losses due to outdated hardware. Industry analyses suggest that the total cost of ownership (TCO) for aging devices can rise significantly, sometimes exceeding the cost of newer, more efficient replacements.​
 
 Implementing a Warranty Status report, like the one in BI for Intune, allows organizations to monitor warranty timelines effectively. This proactive approach aids in budgeting for timely replacements, ensuring devices are retired before they become a financial or operational burden.
-![bi for intune warranty page](images/bi-for-intune-warranty-page-1024x261.png)
+![bi for intune warranty page](../images/bi-for-intune-warranty-page-1024x261.png)
 
 ## The New Driver Inventory Page
 
 
 The new Drivers Inventory page in BI for Intune gives customers comprehensive visibility into the drivers installed across their device fleet. Reporting on driver inventory helps organizations identify outdated or problematic drivers that may be associated with known vulnerabilities or system instability. By surfacing key details like driver version, release date, and provider, this report enables IT teams to proactively address issues that could lead to crashes, security risks, or performance degradation—helping to improve overall endpoint reliability and reduce support costs.
-![driver inventory page](images/driver-inventory-page-1024x579.png)
+![driver inventory page](../images/driver-inventory-page-1024x579.png)
 
 ## The New M365 Updates Page
 
 
 The new M365 Updates report in BI for Intune gives IT leaders a clear, unified view of both Windows and Office update compliance—without the need to navigate multiple Microsoft portals. Instead of jumping between different tools to track update status, this report brings everything together in one place. By consolidating data across the Microsoft 365 ecosystem, it helps organizations quickly identify gaps, reduce risk, and make more informed decisions around update management. It also makes it easier to tie update compliance to broader business or security goals, with powerful filtering and slicing options built in.
-![m365 updates page](images/m365-updates-page-1024x506.png)
+![m365 updates page](../images/m365-updates-page-1024x506.png)

@@ -12,7 +12,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 1. In the **Intune console** select the **Reports** blade.
 1. Select **Windows Updates (preview)**.
-![](images/Windows-Updates-Preview-Report-1024x728.png)
+![](../images/Windows-Updates-Preview-Report-1024x728.png)
 ### Step 2
 
 
@@ -21,7 +21,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 1. Select the **Reports** tab.
 1. Select the **Windows Feature Update report**.
-![](images/Feature-Update-Report-1024x440.png)
+![](../images/Feature-Update-Report-1024x440.png)
 ### Step 3
 
 
@@ -30,7 +30,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 1. Select a **feature update profile**.
 1. Select **Ok**.
-![](images/Select-Feature-Update-Deployment-1024x563.png)
+![](../images/Select-Feature-Update-Deployment-1024x563.png)
 ### Step 4
 
 
@@ -39,7 +39,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 1. Press **F12** to open the **developer pane** in your browser.
 1. Select **Generate report**.
-![](images/Developer-Menu-1024x426.png)
+![](../images/Developer-Menu-1024x426.png)
 ### Step 5
 
 
@@ -48,7 +48,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 1. Select **Export**.
 1. Select **Yes**at the prompt to export a .csv.
-![](images/Export-1024x530.png)
+![](../images/Export-1024x530.png)
 ### Step 6
 
 
@@ -58,7 +58,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 1. On the **Network tab** of the Developer pane in the browser watch for the the line starting with **WindowsUpdatePerPolicyPerDeviceStatus**.
 1. Select the line starting with **WindowsUpdatePerPolicyPerDeviceStatus**, this will contain the the **Request URL**.
 1. Copy the **Request URL**and save it for use later. It should look something like this, "**https://amsua0401repexpstorage.blob.core.windows.net**".
-![](images/Request-URL-1024x855.png)
+![](../images/Request-URL-1024x855.png)
 ### Step 7
 
 
@@ -67,7 +67,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 1. In **Power BI** go to the **BI for Intune workspace**.
 1. Select the **dataset settings**.
-![](images/Dataset-settings-1024x765.png)
+![](../images/Dataset-settings-1024x765.png)
 ### Step 8
 
 
@@ -78,4 +78,4 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 1. Enter the **Export URL** that you previously saved in the **AzureAD Export URL** parameter.
 1. Enter **TRUE** in the **AzureAD Export URL Enable** parameter.
 1. Select **Apply**.
-![](images/parameters-507x1024.png)
+![](../images/parameters-507x1024.png)

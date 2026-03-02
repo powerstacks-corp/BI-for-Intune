@@ -67,4 +67,4 @@ New "Device Firewall" category and fields in the data model. Fields include:
 
 
 ## New UC Delivery Optimization Page
-![uc do page](images/uc_do_page-1024x574.png)
+![uc do page](../images/uc_do_page-1024x574.png)

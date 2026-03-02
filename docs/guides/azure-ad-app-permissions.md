@@ -47,4 +47,4 @@ Below are all of the permissions required to be configured on the Azure AD App R
   Application
 - **Permissions:**
   Data.Read
-![intune app permissions](images/intune_app_permissions-1-1024x714.png)
+![intune app permissions](../images/intune_app_permissions-1-1024x714.png)

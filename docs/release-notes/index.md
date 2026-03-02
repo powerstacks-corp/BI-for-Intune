@@ -299,7 +299,7 @@ Several customers have recently reported upgrade failures resulting in the loss 
 
 
 This report has been added to the Windows Update for Business custom report available on [GitHub](https://github.com/PowerStacks-BI/BI-for-Intune/tree/main/Windows%20Update%20for%20Business%20Reports). For more information, please see [this blog](https://powerstacks.com/windows-update-for-business-reports-reimagined-a-simpler-way-to-analyze-updates/).
-![windows update progression](images/windows_update_progression-1024x566.png)
+![windows update progression](../images/windows_update_progression-1024x566.png)
 
 ---
 
@@ -459,19 +459,19 @@ Many organizations align their hardware lifecycle strategy with warranty coverag
 Extending the use of computers beyond their warranty period can lead to increased costs. These costs stem from higher failure rates, increased maintenance expenses, and potential productivity losses due to outdated hardware. Industry analyses suggest that the total cost of ownership (TCO) for aging devices can rise significantly, sometimes exceeding the cost of newer, more efficient replacements.​
 
 Implementing a Warranty Status report, like the one in BI for Intune, allows organizations to monitor warranty timelines effectively. This proactive approach aids in budgeting for timely replacements, ensuring devices are retired before they become a financial or operational burden.
-![bi for intune warranty page](images/bi-for-intune-warranty-page-1024x261.png)
+![bi for intune warranty page](../images/bi-for-intune-warranty-page-1024x261.png)
 
 ## The New Driver Inventory Page
 
 
 The new Drivers Inventory page in BI for Intune gives customers comprehensive visibility into the drivers installed across their device fleet. Reporting on driver inventory helps organizations identify outdated or problematic drivers that may be associated with known vulnerabilities or system instability. By surfacing key details like driver version, release date, and provider, this report enables IT teams to proactively address issues that could lead to crashes, security risks, or performance degradation—helping to improve overall endpoint reliability and reduce support costs.
-![driver inventory page](images/driver-inventory-page-1024x579.png)
+![driver inventory page](../images/driver-inventory-page-1024x579.png)
 
 ## The New M365 Updates Page
 
 
 The new M365 Updates report in BI for Intune gives IT leaders a clear, unified view of both Windows and Office update compliance—without the need to navigate multiple Microsoft portals. Instead of jumping between different tools to track update status, this report brings everything together in one place. By consolidating data across the Microsoft 365 ecosystem, it helps organizations quickly identify gaps, reduce risk, and make more informed decisions around update management. It also makes it easier to tie update compliance to broader business or security goals, with powerful filtering and slicing options built in.
-![m365 updates page](images/m365-updates-page-1024x506.png)
+![m365 updates page](../images/m365-updates-page-1024x506.png)
 
 ---
 
@@ -745,7 +745,7 @@ Prior to version 44 we only showed application deployment status for devices whi
 
 
 ##### Below is an example of adding the required filter for accurate app status by device.
-![intune app status filter](images/intune_app_status_filter-1024x779.png)
+![intune app status filter](../images/intune_app_status_filter-1024x779.png)
 
 ---
 
@@ -782,16 +782,16 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 ### Autopilot Enrollment Status
-![autopilot enrollment status](images/autopilot-enrollment-status-1024x595.png)
+![autopilot enrollment status](../images/autopilot-enrollment-status-1024x595.png)
 
 ### Co-Managed Workloads
-![co managed workloads](images/co-managed-workloads-1024x528.png)
+![co managed workloads](../images/co-managed-workloads-1024x528.png)
 
 ### Cloud PC Provisioning Status
-![cpc provisioning](images/cpc-provisioning-1024x577.png)
+![cpc provisioning](../images/cpc-provisioning-1024x577.png)
 
 ### Cloud PC Usage
-![cloud pc usage](images/cloud-pc-usage-1024x572.png)
+![cloud pc usage](../images/cloud-pc-usage-1024x572.png)
 
 ### Add CloudPC.Read.All to Enterprise App Registration
 
@@ -803,7 +803,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 								Login to **portal.azure.com **or **entra.microsoft.com** using a global administrator account.Search for and select App used for BI for Intune.**
-![](images/New_Registration-1024x491.png)
+![](../images/New_Registration-1024x491.png)
 ### Step 2
 
 
@@ -811,7 +811,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. On the Enterprise App page select **API Permissions**.
-![](images/API_Permissions-1024x530.png)
+![](../images/API_Permissions-1024x530.png)
 ### Step 3
 
 
@@ -819,7 +819,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. Select **Add a permission**.
-![](images/add_permission-1024x425.png)
+![](../images/add_permission-1024x425.png)
 ### Step 4
 
 
@@ -827,7 +827,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. Select **Microsoft Graph**.
-![](images/MS_graph-1024x434.png)
+![](../images/MS_graph-1024x434.png)
 ### Step 5
 
 
@@ -835,7 +835,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. Select **Application permissions**.
-![](images/application_permissions-1024x403.png)
+![](../images/application_permissions-1024x403.png)
 ### Step 6
 
 
@@ -845,7 +845,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 1. Search for **Cloud PC**.
 1. Select the following permissions:**CloudPC.Read.All**
 Select **Add permissions**.
-![cpc read all](images/cpc_read_all-677x1024.png)
+![cpc read all](../images/cpc_read_all-677x1024.png)
 ### Step 7
 
 
@@ -853,7 +853,7 @@ Select **Add permissions**.
 
 
 1. Select **Grant admin consent for **.
-![cpc consent](images/cpc_consent-1024x728.png)
+![cpc consent](../images/cpc_consent-1024x728.png)
 ### Step 8
 
 
@@ -862,7 +862,7 @@ Select **Add permissions**.
 
 1. Select **Yes**at the prompt.
 1. You've completed all required steps for adding the new permission to the app registration.
-![](images/Admin-Consent-Yes-1024x108.png)
+![](../images/Admin-Consent-Yes-1024x108.png)
 
 ---
 
@@ -981,7 +981,7 @@ New "Device Firewall" category and fields in the data model. Fields include:
 
 
 ## New UC Delivery Optimization Page
-![uc do page](images/uc_do_page-1024x574.png)
+![uc do page](../images/uc_do_page-1024x574.png)
 
 ---
 
@@ -1425,7 +1425,7 @@ exit 0
 #endregion script
 
 ##### The App Inventory Page Will Display Apps Installed on macOS
-![mac app inventory](images/mac_app_inventory-1009x1024.png)
+![mac app inventory](../images/mac_app_inventory-1009x1024.png)
 
 ---
 
@@ -1517,7 +1517,7 @@ Version 50 fixed a bug when the Apple MDM Push Certificate was not present in In
 
 
 ## New Connectors and Tokens Page
-![connectors and tokens](images/connectors-and-tokens-1024x484.png)
+![connectors and tokens](../images/connectors-and-tokens-1024x484.png)
 
 ---
 

@@ -34,4 +34,4 @@ Prior to version 44 we only showed application deployment status for devices whi
 
 
 ##### Below is an example of adding the required filter for accurate app status by device.
-![intune app status filter](images/intune_app_status_filter-1024x779.png)
+![intune app status filter](../images/intune_app_status_filter-1024x779.png)

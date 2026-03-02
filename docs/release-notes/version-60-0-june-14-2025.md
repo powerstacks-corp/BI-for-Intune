@@ -60,4 +60,4 @@ Several customers have recently reported upgrade failures resulting in the loss 
 
 
 This report has been added to the Windows Update for Business custom report available on [GitHub](https://github.com/PowerStacks-BI/BI-for-Intune/tree/main/Windows%20Update%20for%20Business%20Reports). For more information, please see [this blog](https://powerstacks.com/windows-update-for-business-reports-reimagined-a-simpler-way-to-analyze-updates/).
-![windows update progression](images/windows_update_progression-1024x566.png)
+![windows update progression](../images/windows_update_progression-1024x566.png)

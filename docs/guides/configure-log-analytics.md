@@ -16,7 +16,7 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 
 
 1. In the **Azure portal** search for, and select, **Log Analytics workspaces**.
-![](images/Search-for-LA-1024x266.png)
+![](../images/Search-for-LA-1024x266.png)
 ### Step 2
 
 
@@ -24,7 +24,7 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 
 
 1. Select the **Log Analytics workspace** where you will store the **custom inventory data**.
-![](images/Select-LA-Workspace-1024x267.png)
+![](../images/Select-LA-Workspace-1024x267.png)
 ### Step 3
 
 
@@ -32,7 +32,7 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 
 
 1. Select **Access control (IAM)**.
-![](images/IAM-1024x606.png)
+![](../images/IAM-1024x606.png)
 ### Step 4
 
 
@@ -41,7 +41,7 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 
 1. Select **Add**.
 1. Select **Add role assignment**.
-![](images/Add-Role-Assignment-1024x812.png)
+![](../images/Add-Role-Assignment-1024x812.png)
 ### Step 5
 
 
@@ -51,7 +51,7 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 1. Search for **Log Analytics Reader**.
 1. Select **Log Analytics Reader**.
 1. Select **Next**.
-![](images/Log-Analytics-Reader-591x1024.png)
+![](../images/Log-Analytics-Reader-591x1024.png)
 ### Step 6
 
 
@@ -62,7 +62,7 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 1. Select **+Select Members**.
 1. Search for and select the name of the **Enterprise App Registration** that was created when you installed BI for Intune.
 1. Select **Next**.
-![](images/Select-Ent-App-1024x568.png)
+![](../images/Select-Ent-App-1024x568.png)
 ### Step 7
 
 
@@ -70,7 +70,7 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 
 
 1. Select **Review and assign**.
-![](images/Review-and-Assign-742x1024.png)
+![](../images/Review-and-Assign-742x1024.png)
 ### Step 8
 
 
@@ -80,4 +80,4 @@ Log Analytics is a tool in the Azure portal to edit and run log queries. We are 
 1. Select **Agents management**.
 1. Record the **Workspace ID** for later use.
 1. Record the **Primary key**for later use.
-![](images/Agents-Management-1024x352.png)
+![](../images/Agents-Management-1024x352.png)

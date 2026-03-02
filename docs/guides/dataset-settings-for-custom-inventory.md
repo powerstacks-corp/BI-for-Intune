@@ -12,7 +12,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 1. Select **Workspaces**.
 1. Select the **BI for Intune** workspace.
-![bi for intune workspace](images/bi_for_intune_workspace.png)
+![bi for intune workspace](../images/bi_for_intune_workspace.png)
 ### Step 2
 
 
@@ -22,7 +22,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Hover over the bi_for_intune **Semantic model** to reveal a **kebab menu** (three vertical dots).
 1. Select the **kebab menu**.
 1. Select **Settings**.
-![intune model settings](images/intune_model_settings-1024x1013.png)
+![intune model settings](../images/intune_model_settings-1024x1013.png)
 ### Step 3
 
 
@@ -33,7 +33,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Locate the **AzureAD LogAnalytics Enable** field and change the value from FALSE to **TRUE**.
 1. Locate the **AzureAD LogAnalytics WorkspaceID**field and enter the **Log Analytics Workspace ID**that you recorded during the [**Configuring Log Analytics  **](configure-log-analytics.md)step.
 1. Select **Apply**.
-![](images/Intune_Enable_Log_Analytics-538x1024.png)
+![](../images/Intune_Enable_Log_Analytics-538x1024.png)
 ### Step 4
 
 
@@ -42,7 +42,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 1. Expand **Gateway source credentials**.
 1. One of the four **Web**data sources should have an "**X**" next to it, select **Edit credentials** on that line.
-![](images/intune-edit-credentials-2.png)
+![](../images/intune-edit-credentials-2.png)
 ### Step 5
 
 
@@ -54,4 +54,4 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Select **Organizational** as the **Privacy level setting for this data source**.
 1. Check the box to **Skip test connection**.
 1. Select **Sign in**.
-![](images/Intune-LA-Signin.png)
+![](../images/Intune-LA-Signin.png)

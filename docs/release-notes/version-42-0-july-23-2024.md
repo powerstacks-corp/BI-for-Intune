@@ -32,16 +32,16 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 ### Autopilot Enrollment Status
-![autopilot enrollment status](images/autopilot-enrollment-status-1024x595.png)
+![autopilot enrollment status](../images/autopilot-enrollment-status-1024x595.png)
 
 ### Co-Managed Workloads
-![co managed workloads](images/co-managed-workloads-1024x528.png)
+![co managed workloads](../images/co-managed-workloads-1024x528.png)
 
 ### Cloud PC Provisioning Status
-![cpc provisioning](images/cpc-provisioning-1024x577.png)
+![cpc provisioning](../images/cpc-provisioning-1024x577.png)
 
 ### Cloud PC Usage
-![cloud pc usage](images/cloud-pc-usage-1024x572.png)
+![cloud pc usage](../images/cloud-pc-usage-1024x572.png)
 
 ### Add CloudPC.Read.All to Enterprise App Registration
 
@@ -53,7 +53,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 								Login to **portal.azure.com **or **entra.microsoft.com** using a global administrator account.Search for and select App used for BI for Intune.**
-![](images/New_Registration-1024x491.png)
+![](../images/New_Registration-1024x491.png)
 ### Step 2
 
 
@@ -61,7 +61,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. On the Enterprise App page select **API Permissions**.
-![](images/API_Permissions-1024x530.png)
+![](../images/API_Permissions-1024x530.png)
 ### Step 3
 
 
@@ -69,7 +69,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. Select **Add a permission**.
-![](images/add_permission-1024x425.png)
+![](../images/add_permission-1024x425.png)
 ### Step 4
 
 
@@ -77,7 +77,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. Select **Microsoft Graph**.
-![](images/MS_graph-1024x434.png)
+![](../images/MS_graph-1024x434.png)
 ### Step 5
 
 
@@ -85,7 +85,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 
 
 1. Select **Application permissions**.
-![](images/application_permissions-1024x403.png)
+![](../images/application_permissions-1024x403.png)
 ### Step 6
 
 
@@ -95,7 +95,7 @@ This version introduces several new features and enhancements, focusing on Cloud
 1. Search for **Cloud PC**.
 1. Select the following permissions:**CloudPC.Read.All**
 Select **Add permissions**.
-![cpc read all](images/cpc_read_all-677x1024.png)
+![cpc read all](../images/cpc_read_all-677x1024.png)
 ### Step 7
 
 
@@ -103,7 +103,7 @@ Select **Add permissions**.
 
 
 1. Select **Grant admin consent for **.
-![cpc consent](images/cpc_consent-1024x728.png)
+![cpc consent](../images/cpc_consent-1024x728.png)
 ### Step 8
 
 
@@ -112,4 +112,4 @@ Select **Add permissions**.
 
 1. Select **Yes**at the prompt.
 1. You've completed all required steps for adding the new permission to the app registration.
-![](images/Admin-Consent-Yes-1024x108.png)
+![](../images/Admin-Consent-Yes-1024x108.png)

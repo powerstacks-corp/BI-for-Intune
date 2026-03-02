@@ -376,4 +376,4 @@ exit 0
 #endregion script
 
 ##### The App Inventory Page Will Display Apps Installed on macOS
-![mac app inventory](images/mac_app_inventory-1009x1024.png)
+![mac app inventory](../images/mac_app_inventory-1009x1024.png)
