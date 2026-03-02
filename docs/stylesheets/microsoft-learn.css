@@ -1,0 +1,584 @@
+/*
+ * Microsoft Learn-inspired theme for MkDocs Material
+ * Matches the look and feel of learn.microsoft.com
+ */
+
+/* ── Color palette ── */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #0078d4;
+  --md-primary-fg-color--light: #2899f5;
+  --md-primary-fg-color--dark: #005a9e;
+  --md-accent-fg-color: #0078d4;
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #171717;
+  --md-default-fg-color--light: #424242;
+  --md-typeset-color: #171717;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #4dabf7;
+  --md-primary-fg-color--light: #74c0fc;
+  --md-primary-fg-color--dark: #339af0;
+  --md-accent-fg-color: #4dabf7;
+  --md-default-bg-color: #1b1b1b;
+  --md-default-fg-color: #e8e8e8;
+  --md-default-fg-color--light: #b0b0b0;
+  --md-typeset-color: #e8e8e8;
+  --md-code-bg-color: #2d2d2d;
+}
+
+/* ── Typography — match Microsoft's Segoe UI stack ── */
+:root {
+  --md-text-font: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  --md-code-font: "Cascadia Code", "Consolas", "Courier New", monospace;
+}
+
+.md-typeset {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--md-typeset-color);
+}
+
+/* ── Top bar — Microsoft Learn-style brand bar ── */
+/* Override MkDocs Material's announce/banner wrapper */
+.md-banner {
+  background-color: #1b1b1b !important;
+}
+
+.md-banner__inner {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100% !important;
+  padding: 0 1.2rem !important;
+  margin: 0 !important;
+  height: 40px;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.ms-top-bar {
+  display: contents;
+}
+
+.ms-top-bar__inner {
+  display: contents;
+}
+
+.ms-top-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.ms-top-bar__brand {
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.ms-top-bar__separator {
+  color: #666;
+  font-weight: 300;
+}
+
+.ms-top-bar__product {
+  font-weight: 400;
+  color: #ccc;
+}
+
+.ms-top-bar__links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.ms-top-bar__links a {
+  color: #ccc !important;
+  text-decoration: none !important;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.ms-top-bar__links a:hover {
+  color: #ffffff !important;
+  background-color: #333;
+}
+
+.ms-top-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.ms-top-bar__link-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.4rem;
+  color: #ccc !important;
+  text-decoration: none !important;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.ms-top-bar__link-btn:hover {
+  color: #ffffff !important;
+  background-color: #333;
+}
+
+/* Hide top bar links on mobile */
+@media screen and (max-width: 76.25em) {
+  .ms-top-bar__links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .ms-top-bar__right {
+    display: none;
+  }
+}
+
+/* ── Header — Microsoft Learn blue bar ── */
+.md-header {
+  background-color: #0078d4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #1b1b1b;
+  border-bottom: 1px solid #333;
+}
+
+.md-header__title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ── Navigation tabs — Microsoft Learn secondary nav bar ── */
+.md-tabs {
+  background-color: #005a9e;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #252525;
+  border-bottom: 1px solid #333;
+}
+
+.md-tabs__link {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+/* ── Left navigation — Microsoft Learn sidebar style ── */
+.md-nav--primary .md-nav__title {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-nav__item {
+  padding: 0;
+}
+
+.md-nav__link {
+  font-size: 0.825rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  margin: 1px 0;
+}
+
+.md-nav__link:hover {
+  background-color: rgba(0, 120, 212, 0.06);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  background-color: rgba(77, 171, 247, 0.1);
+}
+
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active {
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+  border-left: 2px solid var(--md-primary-fg-color);
+  padding-left: calc(0.6rem - 2px);
+  background-color: rgba(0, 120, 212, 0.04);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active {
+  background-color: rgba(77, 171, 247, 0.08);
+}
+
+/* Section labels (like "Getting Started", "Administration") */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item > label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--light);
+  margin-top: 0.75rem;
+}
+
+/* ── Search bar — cleaner Microsoft-style ── */
+.md-search__input {
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* ── Content area — full width like Microsoft Learn ── */
+.md-content {
+  max-width: none;
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--md-typeset-color);
+  border-bottom: none;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: #444;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+}
+
+.md-typeset h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ── Tables — Microsoft Learn clean style ── */
+.md-typeset table:not([class]) {
+  font-size: 0.825rem;
+  border: 1px solid #e1e1e1;
+  border-collapse: collapse;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  border-color: #444;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #f3f3f3;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 2px solid #d1d1d1;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #2d2d2d;
+  border-bottom-color: #555;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-bottom-color: #3a3a3a;
+}
+
+/* ── Code blocks — Microsoft Learn style ── */
+.md-typeset code {
+  font-size: 0.825em;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  color: #171717;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: #2d2d2d;
+  color: #e8e8e8;
+}
+
+.md-typeset pre > code {
+  padding: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* ── Admonitions — Microsoft-style notes/tips/warnings ── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 4px;
+  border-left: 4px solid;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  box-shadow: none;
+  font-size: 0.85rem;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-left-color: #0078d4;
+  background-color: #f0f6ff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note {
+  background-color: rgba(0, 120, 212, 0.1);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-color: #107c10;
+  background-color: #f0fff0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+  background-color: rgba(16, 124, 16, 0.1);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #ff8c00;
+  background-color: #fff8f0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.warning,
+[data-md-color-scheme="slate"] .md-typeset details.warning {
+  background-color: rgba(255, 140, 0, 0.1);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-left-color: #d13438;
+  background-color: #fff0f0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.danger,
+[data-md-color-scheme="slate"] .md-typeset details.danger {
+  background-color: rgba(209, 52, 56, 0.1);
+}
+
+/* ── Right-side TOC — thinner, Microsoft-style ── */
+.md-sidebar--secondary {
+  width: 13rem;
+}
+
+.md-nav--secondary .md-nav__link {
+  font-size: 0.775rem;
+}
+
+.md-nav--secondary .md-nav__title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Footer ── */
+.md-footer {
+  background-color: #f5f5f5;
+  color: #424242;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: #1b1b1b;
+  color: #b0b0b0;
+}
+
+/* ── Scrollbar styling (Chromium) ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* ── Hero banner — Microsoft Learn blue banner ── */
+.hero-banner {
+  background: linear-gradient(to right, #1a0f7a 0%, #2d28b0 40%, #4f63e8 100%);
+  padding: 3rem 2rem;
+  margin: -0.6rem -0.6rem 2rem -0.6rem;
+}
+
+[data-md-color-scheme="slate"] .hero-banner {
+  background: linear-gradient(to right, #130a5c 0%, #221e88 40%, #3b4cb5 100%);
+}
+
+.hero-banner h1 {
+  color: #ffffff !important;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  border-bottom: none !important;
+}
+
+.hero-banner p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1rem;
+  margin: 0;
+  max-width: 600px;
+}
+
+/* ── Quick link cards — Microsoft Learn feature cards ── */
+.quick-links {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0 0 2rem 0;
+}
+
+@media screen and (max-width: 76.25em) {
+  .quick-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .quick-links {
+    grid-template-columns: 1fr;
+  }
+}
+
+.quick-link-card {
+  display: flex !important;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: var(--md-typeset-color) !important;
+  transition: box-shadow 0.15s, transform 0.15s;
+  border: 1px solid #e8e8e8;
+}
+
+[data-md-color-scheme="slate"] .quick-link-card {
+  background: #2d2d2d;
+  border-color: #404040;
+}
+
+.quick-link-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+  text-decoration: none !important;
+}
+
+[data-md-color-scheme="slate"] .quick-link-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quick-link-card .card-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-link-card .card-icon svg,
+.quick-link-card .card-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.quick-link-card .card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-link-card .card-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+}
+
+.quick-link-card .card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+/* ── Tabs — Microsoft pivot style ── */
+.md-typeset .tabbed-labels > label {
+  font-size: 0.825rem;
+  font-weight: 600;
+}
+
+.md-typeset .tabbed-labels > label--active {
+  border-bottom-color: var(--md-primary-fg-color);
+}
+
+/* ── Task lists ── */
+.md-typeset .task-list-indicator::before {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* ── Permalink anchors — Microsoft Learn chain-link icon ── */
+.md-typeset .headerlink {
+  font-size: 0 !important;
+  opacity: 0;
+  transition: opacity 0.2s;
+  vertical-align: middle;
+}
+
+.md-typeset .headerlink::after {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  background-color: var(--md-default-fg-color--light);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.md-typeset h1:hover .headerlink,
+.md-typeset h2:hover .headerlink,
+.md-typeset h3:hover .headerlink,
+.md-typeset h4:hover .headerlink {
+  opacity: 0.5;
+}
