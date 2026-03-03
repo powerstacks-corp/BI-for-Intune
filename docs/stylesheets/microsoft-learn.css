@@ -1,15 +1,40 @@
 /*
- * Microsoft Learn-inspired theme for MkDocs Material
- * Matches the look and feel of learn.microsoft.com
+ * PowerStacks-branded theme for MkDocs Material
+ * Based on Microsoft Learn design, aligned with powerstacks.com branding
+ *
+ * ── Brand Color Palette ──
+ *
+ * Primary:
+ *   Brand Navy:       #051441  (top bar, tabs, dark backgrounds)
+ *   Brand Navy Light: #0A1F5E  (hover states, dark mode header)
+ *   Brand Gradient:   #3221AA → #5670F0  (header bar, hero banners)
+ *   Gradient Mid:     #4A5CF5  (links, accents, primary fg)
+ *
+ * Accents:
+ *   Brand Blue:       #6EC1E4  (light accent, active doc indicator)
+ *   Brand Green:      #61CE70  (CTAs on main website)
+ *
+ * Dark Mode:
+ *   Primary:          #7B8AF7  (lightened gradient midpoint)
+ *   Light Accent:     #8ED3EA  (lightened brand blue)
+ *   Dark Accent:      #5670F0  (gradient end)
+ *   Header:           #0A1F5E  (navy light)
+ *   Tabs:             #030C2A  (deeper navy)
+ *
+ * Semantic (unchanged):
+ *   Note:    #4A5CF5 (purple, matches brand)
+ *   Tip:     #107c10 (green)
+ *   Warning: #ff8c00 (orange)
+ *   Danger:  #d13438 (red)
  */
 
 /* ── Color palette ── */
 :root,
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #0078d4;
-  --md-primary-fg-color--light: #2899f5;
-  --md-primary-fg-color--dark: #005a9e;
-  --md-accent-fg-color: #0078d4;
+  --md-primary-fg-color: #4A5CF5;
+  --md-primary-fg-color--light: #6EC1E4;
+  --md-primary-fg-color--dark: #3221AA;
+  --md-accent-fg-color: #4A5CF5;
   --md-default-bg-color: #ffffff;
   --md-default-fg-color: #171717;
   --md-default-fg-color--light: #424242;
@@ -17,10 +42,10 @@
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #4dabf7;
-  --md-primary-fg-color--light: #74c0fc;
-  --md-primary-fg-color--dark: #339af0;
-  --md-accent-fg-color: #4dabf7;
+  --md-primary-fg-color: #7B8AF7;
+  --md-primary-fg-color--light: #8ED3EA;
+  --md-primary-fg-color--dark: #5670F0;
+  --md-accent-fg-color: #7B8AF7;
   --md-default-bg-color: #1b1b1b;
   --md-default-fg-color: #e8e8e8;
   --md-default-fg-color--light: #b0b0b0;
@@ -40,10 +65,9 @@
   color: var(--md-typeset-color);
 }
 
-/* ── Top bar — Microsoft Learn-style brand bar ── */
-/* Override MkDocs Material's announce/banner wrapper */
+/* ── Global nav bar — PowerStacks branded ── */
 .md-banner {
-  background-color: #1b1b1b !important;
+  background-color: #051441 !important;
 }
 
 .md-banner__inner {
@@ -59,104 +83,155 @@
   color: #ffffff;
 }
 
-.ms-top-bar {
+.ps-global-nav {
   display: contents;
 }
 
-.ms-top-bar__inner {
+.ps-global-nav__inner {
   display: contents;
 }
 
-.ms-top-bar__left {
-  display: flex;
+/* Brand / Logo */
+.ps-global-nav__brand {
+  display: flex !important;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none !important;
+  color: #ffffff !important;
   flex-shrink: 0;
 }
 
-.ms-top-bar__brand {
+.ps-global-nav__brand:hover {
+  opacity: 0.9;
+}
+
+.ps-global-nav__logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.ps-global-nav__brand-text {
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: -0.01em;
-  color: #ffffff;
 }
 
-.ms-top-bar__separator {
-  color: #666;
-  font-weight: 300;
-}
-
-.ms-top-bar__product {
-  font-weight: 400;
-  color: #ccc;
-}
-
-.ms-top-bar__links {
+/* Middle: site links */
+.ps-global-nav__site-links {
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
-.ms-top-bar__links a {
-  color: #ccc !important;
+.ps-global-nav__site-links a {
+  color: rgba(255, 255, 255, 0.75) !important;
   text-decoration: none !important;
-  padding: 0.4rem 0.75rem;
+  padding: 0.35rem 0.65rem;
   border-radius: 4px;
+  font-size: 0.8rem;
   transition: background-color 0.15s, color 0.15s;
   white-space: nowrap;
 }
 
-.ms-top-bar__links a:hover {
+.ps-global-nav__site-links a:hover {
   color: #ffffff !important;
-  background-color: #333;
+  background-color: #0A1F5E;
 }
 
-.ms-top-bar__right {
+/* Right: doc switcher + GitHub */
+.ps-global-nav__docs-links {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
   flex-shrink: 0;
 }
 
-.ms-top-bar__link-btn {
+.ps-global-nav__docs-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.25rem;
+}
+
+.ps-global-nav__doc-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-decoration: none !important;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  transition: background-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.ps-global-nav__doc-link:hover {
+  color: #ffffff !important;
+  background-color: #0A1F5E;
+}
+
+.ps-global-nav__doc-link--active {
+  color: #ffffff !important;
+  font-weight: 600;
+  background-color: rgba(110, 193, 228, 0.15);
+  border: 1px solid rgba(110, 193, 228, 0.3);
+}
+
+.ps-global-nav__github-btn {
   display: inline-flex !important;
   align-items: center;
-  gap: 0.4rem;
-  color: #ccc !important;
+  gap: 0.35rem;
+  color: rgba(255, 255, 255, 0.75) !important;
   text-decoration: none !important;
-  padding: 0.35rem 0.75rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 4px;
-  font-size: 0.8rem;
-  transition: background-color 0.15s, color 0.15s;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
 }
 
-.ms-top-bar__link-btn:hover {
+.ps-global-nav__github-btn:hover {
   color: #ffffff !important;
-  background-color: #333;
+  background-color: #0A1F5E;
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Hide top bar links on mobile */
+/* Responsive: hide site links on tablet */
 @media screen and (max-width: 76.25em) {
-  .ms-top-bar__links {
+  .ps-global-nav__site-links {
     display: none;
   }
 }
 
+/* Responsive: compact doc switcher on small tablet */
+@media screen and (max-width: 60em) {
+  .ps-global-nav__docs-label {
+    display: none;
+  }
+  .ps-global-nav__doc-link {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.4rem;
+  }
+}
+
+/* Responsive: hide everything except brand on mobile */
 @media screen and (max-width: 44.9375em) {
-  .ms-top-bar__right {
+  .ps-global-nav__docs-links {
     display: none;
   }
 }
 
-/* ── Header — Microsoft Learn blue bar ── */
+/* ── Header — PowerStacks branded gradient ── */
 .md-header {
-  background-color: #0078d4;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 [data-md-color-scheme="slate"] .md-header {
-  background-color: #1b1b1b;
-  border-bottom: 1px solid #333;
+  background: #0A1F5E;
+  border-bottom: 1px solid #1a2d6e;
 }
 
 .md-header__title {
@@ -164,14 +239,14 @@
   font-size: 0.95rem;
 }
 
-/* ── Navigation tabs — Microsoft Learn secondary nav bar ── */
+/* ── Navigation tabs — PowerStacks secondary bar ── */
 .md-tabs {
-  background-color: #005a9e;
+  background-color: #051441;
 }
 
 [data-md-color-scheme="slate"] .md-tabs {
-  background-color: #252525;
-  border-bottom: 1px solid #333;
+  background-color: #030C2A;
+  border-bottom: 1px solid #0A1F5E;
 }
 
 .md-tabs__link {
@@ -185,7 +260,7 @@
   opacity: 1;
 }
 
-/* ── Left navigation — Microsoft Learn sidebar style ── */
+/* ── Left navigation — sidebar style ── */
 .md-nav--primary .md-nav__title {
   font-weight: 600;
   font-size: 0.8rem;
@@ -206,11 +281,11 @@
 }
 
 .md-nav__link:hover {
-  background-color: rgba(0, 120, 212, 0.06);
+  background-color: rgba(74, 92, 245, 0.06);
 }
 
 [data-md-color-scheme="slate"] .md-nav__link:hover {
-  background-color: rgba(77, 171, 247, 0.1);
+  background-color: rgba(123, 138, 247, 0.1);
 }
 
 .md-nav__link--active,
@@ -219,12 +294,12 @@
   color: var(--md-primary-fg-color);
   border-left: 2px solid var(--md-primary-fg-color);
   padding-left: calc(0.6rem - 2px);
-  background-color: rgba(0, 120, 212, 0.04);
+  background-color: rgba(74, 92, 245, 0.04);
 }
 
 [data-md-color-scheme="slate"] .md-nav__link--active,
 [data-md-color-scheme="slate"] .md-nav__item .md-nav__link--active {
-  background-color: rgba(77, 171, 247, 0.08);
+  background-color: rgba(123, 138, 247, 0.08);
 }
 
 /* Section labels (like "Getting Started", "Administration") */
@@ -238,13 +313,13 @@
   margin-top: 0.75rem;
 }
 
-/* ── Search bar — cleaner Microsoft-style ── */
+/* ── Search bar — cleaner style ── */
 .md-search__input {
   border-radius: 4px;
   font-size: 0.85rem;
 }
 
-/* ── Content area — full width like Microsoft Learn ── */
+/* ── Content area — full width ── */
 .md-content {
   max-width: none;
 }
@@ -280,7 +355,7 @@
   font-size: 1rem;
 }
 
-/* ── Tables — Microsoft Learn clean style ── */
+/* ── Tables — clean style ── */
 .md-typeset table:not([class]) {
   font-size: 0.825rem;
   border: 1px solid #e1e1e1;
@@ -313,7 +388,7 @@
   border-bottom-color: #3a3a3a;
 }
 
-/* ── Code blocks — Microsoft Learn style ── */
+/* ── Code blocks ── */
 .md-typeset code {
   font-size: 0.825em;
   padding: 0.15em 0.4em;
@@ -333,7 +408,7 @@
   line-height: 1.5;
 }
 
-/* ── Admonitions — Microsoft-style notes/tips/warnings ── */
+/* ── Admonitions — notes/tips/warnings ── */
 .md-typeset .admonition,
 .md-typeset details {
   border-radius: 4px;
@@ -347,13 +422,13 @@
 
 .md-typeset .admonition.note,
 .md-typeset details.note {
-  border-left-color: #0078d4;
-  background-color: #f0f6ff;
+  border-left-color: #4A5CF5;
+  background-color: #f0f2ff;
 }
 
 [data-md-color-scheme="slate"] .md-typeset .admonition.note,
 [data-md-color-scheme="slate"] .md-typeset details.note {
-  background-color: rgba(0, 120, 212, 0.1);
+  background-color: rgba(74, 92, 245, 0.1);
 }
 
 .md-typeset .admonition.tip,
@@ -389,7 +464,7 @@
   background-color: rgba(209, 52, 56, 0.1);
 }
 
-/* ── Right-side TOC — thinner, Microsoft-style ── */
+/* ── Right-side TOC — thinner ── */
 .md-sidebar--secondary {
   width: 13rem;
 }
@@ -407,7 +482,7 @@
 
 /* ── Footer ── */
 .md-footer {
-  background-color: #f5f5f5;
+  background-color: #EFF2F9;
   color: #424242;
 }
 
@@ -430,15 +505,15 @@
   background: #555;
 }
 
-/* ── Hero banner — Microsoft Learn blue banner ── */
+/* ── Hero banner — PowerStacks gradient ── */
 .hero-banner {
-  background: linear-gradient(to right, #1a0f7a 0%, #2d28b0 40%, #4f63e8 100%);
+  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
   padding: 3rem 2rem;
   margin: -0.6rem -0.6rem 2rem -0.6rem;
 }
 
 [data-md-color-scheme="slate"] .hero-banner {
-  background: linear-gradient(to right, #130a5c 0%, #221e88 40%, #3b4cb5 100%);
+  background: linear-gradient(90deg, #241880 0%, #4058C8 100%);
 }
 
 .hero-banner h1 {
@@ -456,7 +531,7 @@
   max-width: 600px;
 }
 
-/* ── Quick link cards — Microsoft Learn feature cards ── */
+/* ── Quick link cards — feature cards ── */
 .quick-links {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr);
@@ -539,7 +614,7 @@
   color: var(--md-primary-fg-color);
 }
 
-/* ── Tabs — Microsoft pivot style ── */
+/* ── Tabs — pivot style ── */
 .md-typeset .tabbed-labels > label {
   font-size: 0.825rem;
   font-weight: 600;
@@ -554,7 +629,7 @@
   background-color: var(--md-primary-fg-color);
 }
 
-/* ── Permalink anchors — Microsoft Learn chain-link icon ── */
+/* ── Permalink anchors — chain-link icon ── */
 .md-typeset .headerlink {
   font-size: 0 !important;
   opacity: 0;
