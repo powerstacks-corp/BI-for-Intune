@@ -4,7 +4,7 @@ title: "Configure Data Sync"
 # Configure Data Synchronization
 Data is synchronized from the data sources to Power BI on a schedule as described here. Most customers sync approximately 3 times per day.
 
-### Step 1
+### Step 1: Open the BI for Intune workspace
 
 
 
@@ -13,7 +13,7 @@ Data is synchronized from the data sources to Power BI on a schedule as describe
 1. Select **Workspaces**.
 1. Select the **BI for Intune** workspace.
 ![bi for intune workspace](../images/bi_for_intune_workspace.png)
-### Step 2
+### Step 2: Open semantic model settings
 
 
 
@@ -23,7 +23,7 @@ Data is synchronized from the data sources to Power BI on a schedule as describe
 1. Select the **kebab menu**.
 1. Select **Settings**.
 ![intune model settings](../images/intune_model_settings-1024x1013.png)
-### Step 3
+### Step 3: Configure the refresh schedule
 
 
 

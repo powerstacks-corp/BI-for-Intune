@@ -4,7 +4,7 @@ title: "Configure the Dataset"
 # Configure The Dataset Parameters
 The BI for Intune dataset contains some parameters that must be configured in order to synchronize data from Intune to Power BI. Other parameters add additional functionality to BI for Intune. In this article we will only configure the parameters required for basic functionality. For a full list of dataset parameters please see the [Dataset Parameters Explained](dataset-parameters.md) document.
 
-### Step 1
+### Step 1: Open the BI for Intune workspace
 
 
 
@@ -13,7 +13,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Select **Workspaces**.
 1. Select the **BI for Intune** workspace.
 ![](../images/BI-for-Intune-Dataset.png)
-### Step 2
+### Step 2: Open dataset settings
 
 
 
@@ -24,7 +24,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Select the **kebab menu**.
 1. Select **Settings**.
 ![](../images/BI-for-Intune-Dataset-settings-1024x830.png)
-### Step 3
+### Step 3: Enter required dataset parameters
 
 
 
@@ -37,7 +37,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Enter the **Azure AD Client Secret** that you recorded during the configuration of the [**Azure AD App Registration**](create-azure-ad-app-registration.md). As mentioned in the previous article the **Client Secret** **does not** have dashes (-) in it. The **Client Secret** **looks similar** to this: **aBcDE~fGh.I.JKlmnopqRsTuVwXyZ1234567890****NOTE**: The most common mistake made when installing BI for Intune is on this step! The client secret **does not** **look like** this: **2f51572d-24ac-43bb-a73a-d3c346b69a45** it **does look like** this: **aBcDE~fGh.I.JKlmnopqRsTuVwXyZ1234567890**.
 Select **Apply**.
 ![all parameters](../images/all_parameters-152x1024.png)
-### Step 4
+### Step 4: Expand Data Source Credentials
 
 
 
@@ -45,7 +45,7 @@ Select **Apply**.
 
 1. Expand **Data Source Credentials**.
 ![](../images/Intune_data_source_credentials.png)
-### Step 5
+### Step 5: Configure data source credentials
 
 
 

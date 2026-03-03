@@ -4,7 +4,7 @@ title: "Dataset Settings for Custom Inventory"
 # Custom Inventory Dataset Parameters
 The BI for Intune dataset contains some parameters that must be configured in order to synchronize data from Intune to Power BI. Other parameters, such as this one, add additional functionality to BI for Intune. In this article we configure the parameters required for our custom inventory functionality.
 
-### Step 1
+### Step 1: Open the BI for Intune workspace
 
 
 
@@ -13,7 +13,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Select **Workspaces**.
 1. Select the **BI for Intune** workspace.
 ![bi for intune workspace](../images/bi_for_intune_workspace.png)
-### Step 2
+### Step 2: Open semantic model settings
 
 
 
@@ -23,7 +23,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Select the **kebab menu**.
 1. Select **Settings**.
 ![intune model settings](../images/intune_model_settings-1024x1013.png)
-### Step 3
+### Step 3: Enable Log Analytics parameters
 
 
 
@@ -34,7 +34,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Locate the **AzureAD LogAnalytics WorkspaceID**field and enter the **Log Analytics Workspace ID**that you recorded during the [**Configuring Log Analytics  **](configure-log-analytics.md)step.
 1. Select **Apply**.
 ![](../images/Intune_Enable_Log_Analytics-538x1024.png)
-### Step 4
+### Step 4: Edit gateway source credentials
 
 
 
@@ -43,7 +43,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Expand **Gateway source credentials**.
 1. One of the four **Web**data sources should have an "**X**" next to it, select **Edit credentials** on that line.
 ![](../images/intune-edit-credentials-2.png)
-### Step 5
+### Step 5: Configure Log Analytics credentials
 
 
 

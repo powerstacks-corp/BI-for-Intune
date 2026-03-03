@@ -4,7 +4,7 @@ title: "Dataset Parameters"
 # Dataset Parameters Explained
 The BI for Intune dataset contains some parameters that must be configured in order to synchronize data from Intune to Power BI. Other parameters add additional functionality to BI for Intune. This article explains each of the parameters in detail.
 
-### Step 1
+### Step 1: Open the BI for Intune workspace
 
 
 
@@ -13,7 +13,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. To view or modify the dataset parameters select **Workspaces**.
 1. Select the **BI for Intune** workspace.
 ![](../images/intune_workspace_1.png)
-### Step 2
+### Step 2: Open semantic model settings
 
 
 
@@ -23,7 +23,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Select the **kebab menu**.
 1. Select **Settings**.
 ![intune model settings](../images/intune_model_settings-1024x1013.png)
-### Step 3
+### Step 3: Expand the Parameters section
 
 
 
@@ -31,7 +31,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 1. Expand **Parameters**.
 ![](../images/dataset_parameters.png)
-### Step 4
+### Step 4: Configure Sign-Ins Failure Only
 				AzureAD Sign-Ins Failure Only
 
 
@@ -42,7 +42,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: TRUE
 1. Determines whether or not successful sign-ins are available in the reports. By default, failed sign-in data are available in the reports. Getting successful sign-in data will result in slower synchronizations and possibly cause synchronization timeouts.
 ![](../images/AzureAD-Sign-Ins-Failure-Only.png)
-### Step 5
+### Step 5: Configure Log Analytics Enable
 				AzureAD LogAnalytics Enable
 
 
@@ -52,7 +52,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Required configuration: Yes, only for our customer inventory solution and/or Windows Update for Business reports (formerly named Azure Update Compliance v2.)
 1. Default value: FALSE
 ![](../images/AzureAD-LogAnalytics-Enable.png)
-### Step 6
+### Step 6: Enter the API Key
 				ApiKey
 
 
@@ -63,7 +63,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: Blank
 1. This should be the API Key that you received from us after completing the [**Request a Trial Key**](http://ec2-44-233-222-61.us-west-2.compute.amazonaws.com/wordpress/index.html%3Fp=7938.html) form.
 ![](../images/api_key.png)
-### Step 7
+### Step 7: Enter the Tenant ID
 				AzureAD TenantID
 
 
@@ -75,7 +75,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. This should be your Azure AD tenant ID.
 1. Note: An easy way to get this is to go to [https://www.whatismytenantid.com/](https://www.whatismytenantid.com/)
 ![](../images/AzureAD-TenantID.png)
-### Step 8
+### Step 8: Enter the Client ID
 				AzureAD ClientID
 
 
@@ -86,7 +86,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: blank
 1. The **Application (client) ID** from the [**Azure AD App Registration**](create-azure-ad-app-registration.md).
 ![](../images/client_id.png)
-### Step 9
+### Step 9: Enter the Client Secret
 				AzureAD ClientSecret
 
 
@@ -97,7 +97,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: Blank
 1. **The Azure AD Client Secret is the most common mistake that customers make when installing BI for Intune**.  It is shown as the "Value" when adding the client secret to the [**Azure AD App Registration**](create-azure-ad-app-registration.md). The **Client Secret** **does not** have dashes (-) in it. The **Client Secret** **looks similar** to this: aBcDE~fGh.I.JKlmnopqRsTuVwXyZ1234567890
 ![](../images/client_secret-1.png)
-### Step 10
+### Step 10: Configure Sign-Ins Days
 				AzureAD Sign-Ins Day(s)
 
 
@@ -109,7 +109,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. By default, only sign-in data from the last 1 day are available in the reports. Getting more days of sign-in data will result in slower synchronizations and possibly cause synchronization timeouts. The max value is 7.
 1. Note, sign-in data can be completely disabled by setting this value to -1.
 ![](../images/AzureAD-Sign-Ins-Days.png)
-### Step 11
+### Step 11: Configure the API Page Size
 				AzureAD PageSize API
 
 
@@ -120,7 +120,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 10000
 1. Determines the page size for MS Graph queries. Do not change this value unless instructed to do so by PowerStacks support.
 ![](../images/AzureAD-PageSize-API.png)
-### Step 12
+### Step 12: Enter Log Analytics Workspace ID
 				AzureAD LogAnalytics WorkspaceID
 
 
@@ -132,7 +132,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. This is the workspace ID of the Log Analytics workspace where the custom inventory and/or Windows Update for Business Reports data is stored.
 1. When using our custom inventory solution and Windows Update for Business Reports both must store data in the same Log Analytics workspace.
 ![](../images/AzureAD-LogAnalytics-WorkspaceID.png)
-### Step 13
+### Step 13: Configure Log Analytics Days
 				AzureAD LogAnalytics Day(s)
 
 
@@ -143,7 +143,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 30
 1. Allows you to configure the number of days of data to pull from Log Analytics.
 ![](../images/AzureAD-LogAnalytics-Days-1.png)
-### Step 14
+### Step 14: Configure Log Analytics Page Size
 				AzureAD LogAnalytics PageSize API
 
 
@@ -154,7 +154,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 10000
 1. Determines the page size of Log Analytics queries. Do not change this value unless instructed to do so by PowerStacks support.
 ![](../images/AzureAD-LogAnalytics-PageSize-API.png)
-### Step 15
+### Step 15: Configure Export URL Enable
 				AzureAD Export URL Enable
 
 
@@ -168,7 +168,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Privacy Level: Organizational
 1. Check "Skip test connection"
 ![](../images/AzureAD-Export-URL-Enable.png)
-### Step 16
+### Step 16: Enter the Export URL
 				AzureAD Export URL
 
 
@@ -181,7 +181,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Be sure to also set AzureAD Export URL Enable = TRUE when using this parameter.
 1. To learn more please see our [Configure Intune Export API](export-api-parameter.md) documentation.
 ![](../images/AzureAD-Export-URL.png)
-### Step 17
+### Step 17: Configure Export URL Timeout
 				AzureAD Export URL Timeout (s)
 
 
@@ -192,7 +192,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 3600
 1. Determines the amount of time the sync process waits for each Intune export job before it times out. Do not change this value unless instructed to do so by PowerStacks support.
 ![](../images/AzureAD-Export-URL-Timeout-s.png)
-### Step 18
+### Step 18: Configure Export URL Wait
 				AzureAD Export URL Wait (s)
 
 
@@ -203,7 +203,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 1
 1. Determines the amount of time the sync process waits for each Intune export job to report a status and then loops until a status is received. Do not change this value unless instructed to do so by PowerStacks support.
 ![](../images/Wait_URL_Seconds.png)
-### Step 19
+### Step 19: Configure Compliance Policy Settings
 				AzureAD Compliance Policy Setting State Enable
 
 
@@ -214,7 +214,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: TRUE
 1. This parameter disables the synchronization of Configuration Profiles of the Settings Catalog type. It is TRUE, meaning that the results of those profiles are sync'd to Power BI. This was parameter was added due to periodic issues in a small number of Azure data centers that caused synchronization failures. Leave at the default value unless instructed otherwise by PowerStacks support.
 ![](../images/compliance_policy_settings.png)
-### Step 20
+### Step 20: Configure Group Dynamic Members
 				AzureAD Group Dynamic Members Only
 
 
@@ -225,7 +225,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: TRUE
 1. When set to TRUE only members of dynamic groups will be available in the reports. Changing this to FALSE will make members of assigned groups available in the reports. However, getting the members of assigned groups is a more intensive process and might cause synchronization timeouts.
 ![](../images/AzureAD-Group-Dynamic-Members-Only.png)
-### Step 21
+### Step 21: Configure Group Members Enable
 				AzureAD Group Members Enable
 
 
@@ -237,7 +237,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Determines whether or not the members of Azure AD groups are available in the reports. Depending upon the number of Azure AD groups this could cause synchronization failures.
 1. By default, group members of dynamic groups are available in the reports however this can be modified by the AzureAD Group Dynamic Members Only parameter.
 ![](../images/AzureAD-Group-Members-Enable.png)
-### Step 22
+### Step 22: Configure the Pace API interval
 				AzureAD Pace API (s)
 
 
@@ -248,7 +248,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 0
 1. Determines the amount of time the sync process waits for a response from the Pace API's and then it loops until a response is received. Do not change this value unless instructed to do so by PowerStacks support.
 ![](../images/AzureAD-Pace-API-s.png)
-### Step 23
+### Step 23: Configure Disk Max Wear
 				AzureAD Disk Max Wear
 
 
@@ -259,7 +259,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 90
 1. Used to calculate disk health. Default value is based upon the Microsoft [MSFT_StorageReliabilityCounter](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/msft-storagereliabilitycounter) class documentation.
 ![](../images/AzureAD-Disk-Max-Wear.png)
-### Step 24
+### Step 24: Configure Disk Max Read Errors
 				AzureAD Disk Max Read Errors
 
 
@@ -270,7 +270,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 100
 1. Used to calculate disk health. Default value is based upon the Microsoft [MSFT_StorageReliabilityCounter](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/msft-storagereliabilitycounter) class documentation.
 ![](../images/AzureAD-Disk-Max-Read-Errors.png)
-### Step 25
+### Step 25: Configure Disk Max Write Errors
 				AzureAD Disk Max Write Errors
 
 
@@ -281,7 +281,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: 100
 1. Used to calculate disk health. Default value is based upon the Microsoft [MSFT_StorageReliabilityCounter](https://learn.microsoft.com/en-us/windows-hardware/drivers/storage/msft-storagereliabilitycounter) class documentation.
 ![](../images/AzureAD-Disk-Max-Write-Errors.png)
-### Step 26
+### Step 26: Configure Export URL Batch
 				AzureAD Export URL Batch
 
 
@@ -292,7 +292,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value:
 1.
 ![azuread export url batch](../images/azuread-export-url-batch.png)
-### Step 27
+### Step 27: Configure Application State Enable
 				AzureAD Application State Enable
 
 
@@ -303,7 +303,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value:
 1. This parameter
 ![azuread script state enable](../images/azuread-script-state-enable.png)
-### Step 28
+### Step 28: Configure App Inventory Page Size
 				AzureAD LogAnalytics App Inventory PageSize API
 
 
@@ -314,7 +314,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value:
 1. Used to .
 ![azuread loganalytics app inventory pagesize api](../images/azuread-loganalytics-app-inventory-pagesize-api.png)
-### Step 29
+### Step 29: Configure Script State Enable
 				AzureAD Script State Enable
 
 
@@ -325,7 +325,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: TRUE
 1. This parameter disables the synchronization of Configuration Profiles of the Settings Catalog type. It is TRUE, meaning that the results of those profiles are sync'd to Power BI. This was parameter was added due to periodic issues in a small number of Azure data centers that caused synchronization failures. Leave at the default value unless instructed otherwise by PowerStacks support.
 ![azuread script state enable](../images/azuread-script-state-enable.png)
-### Step 30
+### Step 30: Configure Export URL for Cloud PC
 				AzureAD Export URL CloudPC
 
 
@@ -336,7 +336,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: https://graph.microsoft.com
 1. This parameter only needs to be configured in environments using Windows 365 (Cloud PC) and also have configured the AzureAD Export URL.
 ![azuread export url cloudpc](../images/azuread-export-url-cloudpc.png)
-### Step 31
+### Step 31: Configure Driver Updates Enable
 				AzureAD Driver Updates Enable
 
 
@@ -347,7 +347,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: TRUE
 1. This parameter disables the synchronization of driver information from Windows Driver update management in Microsoft Intune. Default value is TRUE, meaning that the Windows Driver Updates information is sync'd to Power BI. This was parameter was added because the driver data has caused timeout issues for several customers. For best results be selective about the drivers which you approve and keep them to a minimum.
 ![azuread driver updates enable](../images/azuread-driver-updates-enable.png)
-### Step 32
+### Step 32: Configure the Login URL
 				AzureAD Login URL
 
 
@@ -358,7 +358,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: [https://api.loganalytics.io](https://login.microsoftonline.com)
 1. This parameter is only used in multi-cloud environments. For example, if you have some things in the Gov cloud and other things in the public cloud.
 ![azuread login url](../images/azuread-login-url.png)
-### Step 33
+### Step 33: Configure the Graph URL
 				AzureAD Graph URL
 
 
@@ -369,7 +369,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: https://graph.microsoft.com
 1. This parameter is only used in multi-cloud environments. For example, if you have some things in the Gov cloud and other things in the public cloud.
 ![azuread graph url](../images/azuread-graph-url.png)
-### Step 34
+### Step 34: Configure the Log Analytics URL
 				AzureAD LogAnalytics URL
 
 
@@ -380,7 +380,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: https://api.loganalytics.io
 1. This parameter is only used in multi-cloud environments. For example, if you have some things in the Gov cloud and other things in the public cloud.
 ![azuread loganalytics url](../images/azuread-loganalytics-url.png)
-### Step 35
+### Step 35: Configure Timeline Event Days
 				AzureAD Timeline Event Day(s)
 
 
@@ -394,7 +394,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Only valid for customers with the "Microsoft Intune Suite add-on" license.
 1. Defines the number of days data is pulled from the [device timeline in Endpoint Analytics](https://learn.microsoft.com/en-us/mem/analytics/enhanced-device-timeline).
 ![azuread timeline event day(s)](../images/azuread-timeline-event-days.png)
-### Step 36
+### Step 36: Configure Group Members Filter
 				AzureAD Group Members Filter Starts With
 
 
@@ -405,7 +405,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 1. Default value: % (filter is disabled)
 1. This parameter allows for defining a group name prefix to limit group sync to only get members of groups beginning with the prefix.
 ![azuread group members filter starts with](../images/azuread-group-members-filter-starts-with.png)
-### Step 37
+### Step 37: Configure Nested Group Crawler
 				AzureAD Group Members Nested Crawler Enable
 
 

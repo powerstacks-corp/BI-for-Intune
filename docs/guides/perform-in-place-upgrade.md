@@ -6,7 +6,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 
 **Prerequisites:**The user executing these steps should be the owner of the BI for Intune workspace.
 
-### Step 1
+### Step 1: Open Power BI AppSource
 
 
 
@@ -16,7 +16,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 1. Select **Apps**.
 1. Select **Get apps**.
 ![](../images/Get-App-1024x211.png)
-### Step 2
+### Step 2: Find the BI for Intune template
 
 
 
@@ -26,7 +26,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 1. Search for **BI for Intune**.
 1. Select **BI for Intune**.
 ![bi for intune template app](../images/bi_for_intune_template_app-1024x666.png)
-### Step 3
+### Step 3: Get the template app
 
 
 
@@ -34,7 +34,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 
 1. Select **Get It Now**.
 ![bi for intune get now](../images/bi_for_intune_get_now-1024x662.png)
-### Step 4
+### Step 4: Confirm the download
 
 
 
@@ -42,7 +42,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 
 1. Select **Get it Now.**
 ![bi for intune continue](../images/bi_for_intune_continue.png)
-### Step 5
+### Step 5: Update the existing workspace
 
 
 
@@ -52,7 +52,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 1. Select your **production**BI for Intune **workspace**.
 1. Select **Install**.
 ![bi for intune update app](../images/bi_for_intune_update_app-1024x746.png)
-### Step 6
+### Step 6: Confirm the upgrade completed
 
 
 

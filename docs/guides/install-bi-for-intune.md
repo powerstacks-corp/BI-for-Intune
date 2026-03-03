@@ -13,7 +13,7 @@ Installing BI for Intune is quite simple. BI for Intune requires no on-premises 
 To get started select the "**Install Now**" button to be directed to Microsoft App Source.
 [Install Now](https://appsource.microsoft.com/en-US/product/power-bi/powerstackscorporation1641419080242.biforintune?tab=Overview)
 
-### Step 1
+### Step 1: Get the app from AppSource
 
 
 
@@ -22,7 +22,7 @@ To get started select the "**Install Now**" button to be directed to Microsoft A
 1. Select the "**Install Now**" button above.
 1. On the**BI for Intune** page in **Microsoft AppSource** select **Get it now**.
 ![](../images/Intune_Get_it_now-1024x593.png)
-### Step 2
+### Step 2: Sign in with your work email
 
 
 
@@ -30,7 +30,7 @@ To get started select the "**Install Now**" button to be directed to Microsoft A
 
 1. Enter your **work email address** and select **Sign in**.
 ![](../images/Sign-in.png)
-### Step 3
+### Step 3: Install the app
 
 
 
@@ -38,7 +38,7 @@ To get started select the "**Install Now**" button to be directed to Microsoft A
 
 1. Select **Install**.
 ![](../images/Agree-and-Install-1-1024x447.png)
-### Step 4
+### Step 4: Wait for installation to complete
 
 
 
@@ -46,7 +46,7 @@ To get started select the "**Install Now**" button to be directed to Microsoft A
 
 1. You will see a notification that BI for Install is installing. Once this has disappeared you have successfully installed BI for Intune. You may now view the app using the sample data provided or you can connect your data by [requesting a trial license key](request-a-trial-license.md).
 ![](../images/Installing-App.png)
-### Step 5
+### Step 5: View the app with sample data
 
 
 

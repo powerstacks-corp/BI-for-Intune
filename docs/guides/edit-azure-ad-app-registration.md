@@ -9,7 +9,7 @@ These steps might have been performed when originally creating the Azure AD App 
 
 **Prerequisites:**The user performing this step requires Global Admin and Subscription Admin rights.
 
-### Step 1
+### Step 1: Open App registrations in Azure
 
 
 
@@ -19,7 +19,7 @@ These steps might have been performed when originally creating the Azure AD App 
 1. Search for and select **App registrations**.
 1. Select your BI for Intune **App** **registration**. (**Note:** The name of your may vary from what is in this doc.)
 ![](../images/Edit-App-Registration-1024x421.png)
-### Step 2
+### Step 2: Navigate to API Permissions
 
 
 
@@ -27,7 +27,7 @@ These steps might have been performed when originally creating the Azure AD App 
 
 1. On the Enterprise App page select **API Permissions**.
 ![](../images/API_Permissions-1024x530.png)
-### Step 3
+### Step 3: Add a new permission
 
 
 
@@ -35,7 +35,7 @@ These steps might have been performed when originally creating the Azure AD App 
 
 1. Select **Add a permission**.
 ![](../images/Add-Another-Permission-1024x566.png)
-### Step 4
+### Step 4: Select organization APIs
 
 
 
@@ -43,7 +43,7 @@ These steps might have been performed when originally creating the Azure AD App 
 
 1. Select **APIs my organization uses**.
 ![](../images/API-for-My-Org-1024x626.png)
-### Step 5
+### Step 5: Select Log Analytics API
 
 
 
@@ -52,7 +52,7 @@ These steps might have been performed when originally creating the Azure AD App 
 1. Search for **Log Analytics**.
 1. Select **Log Analytics API**.
 ![](../images/Log-Analytics-API-1024x429.png)
-### Step 6
+### Step 6: Select Application permissions
 
 
 
@@ -60,7 +60,7 @@ These steps might have been performed when originally creating the Azure AD App 
 
 1. Select **Application Permissions**.
 ![](../images/Log-Analytics-Applicattion-Permissions-1024x359.png)
-### Step 7
+### Step 7: Add Data.Read permission
 
 
 
@@ -69,7 +69,7 @@ These steps might have been performed when originally creating the Azure AD App 
 1. Select **Data.Read**.
 1. Select **Add permissions**.
 ![](../images/Log-Analytics-Data.Read_-692x1024.png)
-### Step 8
+### Step 8: Grant admin consent
 
 
 
@@ -77,7 +77,7 @@ These steps might have been performed when originally creating the Azure AD App 
 
 1. Select **Grant admin consent for **.
 ![](../images/Grant-Admin-Consent-1024x667.png)
-### Step 9
+### Step 9: Confirm admin consent
 
 
 

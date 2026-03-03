@@ -17,7 +17,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 ![github mark2](../images/github-mark2-80x80.png)
 *Templates Repository*
 
-### Step 1
+### Step 1: Download and open the template
 
 
 
@@ -29,7 +29,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 1. Open Power BI desktop and login using the same credentials that you use to view BI for Intune reports in the Power BI service.
 1. Open the .pbit file in Power BI desktop.
 ![](../images/1.png)
-### Step 2
+### Step 2: Dismiss the connection dialog
 
 
 
@@ -37,7 +37,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. On the **Unable to Connect** dialog box select **Edit.**
 ![3](../images/3.png)
-### Step 3
+### Step 3: Ignore warning messages
 
 
 
@@ -45,7 +45,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. If you see any warnings messages simply ignore them.
 ![4](../images/4-1024x238.png)
-### Step 4
+### Step 4: Select the production dataset
 
 
 
@@ -53,7 +53,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. On the **Select a dataset to create a report** dialog box select your production **BI_for_Intune** dataset then select **Create**.
 ![](../images/6-1024x562.png)
-### Step 5
+### Step 5: Save the report as .pbix
 
 
 
@@ -61,7 +61,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. In Power BI Desktop Select **File** > **Save as** then Select a location to save the file. Provide a name for the file, for example **Intune KPI Dashboard**. (this will be visible when you publish to the Power BI service). Select .**pbix** as the file type. Select **Save**.
 ![7](../images/7-1024x254.png)
-### Step 6
+### Step 6: Publish to Power BI
 
 
 
@@ -69,7 +69,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. On the **Home** ribbon of Power BI desktop select **Publish**.
 ![](../images/8-1024x115.png)
-### Step 7
+### Step 7: Save your changes
 
 
 
@@ -77,7 +77,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. If prompted to save your changes, select **Save**.
 ![9](../images/9.png)
-### Step 8
+### Step 8: Select the target workspace
 
 
 
@@ -85,7 +85,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. On the Publish to Power BI dialog select your production **BI for Intune** Select **Save**.
 ![10](../images/10-1024x482.png)
-### Step 9
+### Step 9: Confirm publishing success
 
 
 
@@ -93,7 +93,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. At the **Publishing to Power BI** Success message select **Got it**.
 ![11](../images/11.png)
-### Step 10
+### Step 10: Open the report in Power BI
 
 
 
@@ -103,7 +103,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 1. Go to your production BI for Intune workspace.
 1. Open the **Intune KPI Dashboard**. (The name might vary; it will be whatever you saved the .pbix file as in step 9 above.
 ![](../images/12-1024x552.png)
-### Step 11
+### Step 11: Enjoy the new reports
 
 
 

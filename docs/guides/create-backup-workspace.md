@@ -8,7 +8,7 @@ Our backup process consists of creating a new workspace by installing a second i
 
 **Prerequisites:**The user executing these steps should be an administrator of the BI for Intune workspace.
 
-### Step 1
+### Step 1: Open Power BI AppSource
 
 
 
@@ -18,7 +18,7 @@ Our backup process consists of creating a new workspace by installing a second i
 1. Select **Apps**.
 1. Select **Get apps**.
 ![](../images/Get-App-1024x211.png)
-### Step 2
+### Step 2: Find the BI for Intune template
 
 
 
@@ -28,7 +28,7 @@ Our backup process consists of creating a new workspace by installing a second i
 1. Search for **BI for Intune**.
 1. Select **BI for Intune**.
 ![](../images/intune-select-template-app-1024x664.png)
-### Step 3
+### Step 3: Get the template app
 
 
 
@@ -36,7 +36,7 @@ Our backup process consists of creating a new workspace by installing a second i
 
 1. Select **Get It Now**.
 ![](../images/intune-get-it-now-1024x661.png)
-### Step 4
+### Step 4: Accept the Microsoft agreement
 
 
 
@@ -45,7 +45,7 @@ Our backup process consists of creating a new workspace by installing a second i
 1. Accept the **Microsoft agreement**.
 1. Select **Continue**.
 ![](../images/intune-ms-agreement.png)
-### Step 5
+### Step 5: Install into a new workspace
 
 
 
@@ -55,7 +55,7 @@ Our backup process consists of creating a new workspace by installing a second i
 1. Enter a name for the new workspace.
 1. Select **Install**.
 ![](../images/New_Backup_Workspace.png)
-### Step 6
+### Step 6: Confirm installation completed
 
 
 

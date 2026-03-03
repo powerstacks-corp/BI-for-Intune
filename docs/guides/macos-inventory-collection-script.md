@@ -13,7 +13,7 @@ We created this script at the request of a customer. It collects the installed s
 Below is the inventory script for macOS:
 ![github mark](../images/github-mark-80x80.png)
 
-### Step 1
+### Step 1: Configure the script credentials
 
 
 
@@ -24,7 +24,7 @@ Below is the inventory script for macOS:
 1. On the line starting with **SharedKey =**enter your Log Analytics Workspace **Primary Key** between the quotes.
 1. Save the edited script.
 ![intune macos script](../images/intune_macos_script-1024x320.png)
-### Step 2
+### Step 2: Deploy the script in Intune
 
 
 

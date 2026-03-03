@@ -6,7 +6,7 @@ When building our data model, we try very hard to ensure that each field name is
 
 Correcting a visualization that contains a field which has been renamed is quite simple. Just follow the steps within this guide.
 
-### Step 1
+### Step 1: Replace renamed fields in visuals
 
 
 

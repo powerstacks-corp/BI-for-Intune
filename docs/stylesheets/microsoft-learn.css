@@ -21,6 +21,11 @@
  *   Header:           #0A1F5E  (navy light)
  *   Tabs:             #030C2A  (deeper navy)
  *
+ * Typography:
+ *   Headings:         #2F5496  (deep blue, light mode only)
+ *   Body Text:        #6A7C92  (soft grey-blue)
+ *   Body Text Light:  #8494A7  (lighter variant)
+ *
  * Semantic (unchanged):
  *   Note:    #4A5CF5 (purple, matches brand)
  *   Tip:     #107c10 (green)
@@ -36,9 +41,9 @@
   --md-primary-fg-color--dark: #3221AA;
   --md-accent-fg-color: #4A5CF5;
   --md-default-bg-color: #ffffff;
-  --md-default-fg-color: #171717;
-  --md-default-fg-color--light: #424242;
-  --md-typeset-color: #171717;
+  --md-default-fg-color: #6A7C92;
+  --md-default-fg-color--light: #8494A7;
+  --md-typeset-color: #6A7C92;
 }
 
 [data-md-color-scheme="slate"] {
@@ -67,7 +72,7 @@
 
 /* ── Global nav bar — PowerStacks branded ── */
 .md-banner {
-  background-color: #051441 !important;
+  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%) !important;
 }
 
 .md-banner__inner {
@@ -241,7 +246,7 @@
 
 /* ── Navigation tabs — PowerStacks secondary bar ── */
 .md-tabs {
-  background-color: #051441;
+  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
 }
 
 [data-md-color-scheme="slate"] .md-tabs {
@@ -328,7 +333,7 @@
   font-weight: 600;
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: var(--md-typeset-color);
+  color: #2F5496;
   border-bottom: none;
 }
 
@@ -338,6 +343,14 @@
   margin-top: 2rem;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid #e1e1e1;
+  color: #2F5496;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4 {
+  color: var(--md-typeset-color);
 }
 
 [data-md-color-scheme="slate"] .md-typeset h2 {
@@ -348,11 +361,13 @@
   font-weight: 600;
   font-size: 1.15rem;
   margin-top: 1.5rem;
+  color: #2F5496;
 }
 
 .md-typeset h4 {
   font-weight: 600;
   font-size: 1rem;
+  color: #2F5496;
 }
 
 /* ── Tables — clean style ── */
