@@ -495,7 +495,154 @@
   letter-spacing: 0.04em;
 }
 
-/* ── Footer ── */
+/* ── Branded Footer ── */
+.ps-footer {
+  background-color: #EFF2F9;
+  border-top: 1px solid #dde3ed;
+  padding: 3rem 1.5rem 0;
+  font-size: 0.85rem;
+  color: #6A7C92;
+}
+
+[data-md-color-scheme="slate"] .ps-footer {
+  background-color: #1b1b1b;
+  border-top-color: #333;
+  color: #b0b0b0;
+}
+
+.ps-footer__inner {
+  max-width: 61rem;
+  margin: 0 auto;
+}
+
+.ps-footer__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .ps-footer__columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ps-footer__heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2F5496;
+  margin: 0 0 0.75rem 0;
+}
+
+[data-md-color-scheme="slate"] .ps-footer__heading {
+  color: #e8e8e8;
+}
+
+.ps-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ps-footer__list li {
+  margin: 0.35rem 0;
+}
+
+.ps-footer__list a {
+  color: #8494A7;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.15s;
+}
+
+.ps-footer__list a:hover {
+  color: #4A5CF5;
+}
+
+[data-md-color-scheme="slate"] .ps-footer__list a {
+  color: #999;
+}
+
+[data-md-color-scheme="slate"] .ps-footer__list a:hover {
+  color: #7B8AF7;
+}
+
+.ps-footer__contact {
+  margin-top: 1rem;
+}
+
+.ps-footer__contact p {
+  margin: 0.25rem 0;
+  font-size: 0.8rem;
+}
+
+.ps-footer__contact a {
+  color: #8494A7;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.ps-footer__contact a:hover {
+  color: #4A5CF5;
+}
+
+.ps-footer__contact-label {
+  font-weight: 600;
+  color: #2F5496;
+}
+
+[data-md-color-scheme="slate"] .ps-footer__contact-label {
+  color: #ccc;
+}
+
+[data-md-color-scheme="slate"] .ps-footer__contact a {
+  color: #999;
+}
+
+.ps-footer__bottom {
+  border-top: 1px solid #dde3ed;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+[data-md-color-scheme="slate"] .ps-footer__bottom {
+  border-top-color: #333;
+}
+
+.ps-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ps-footer__brand img {
+  border-radius: 4px;
+}
+
+.ps-footer__brand-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2F5496;
+}
+
+[data-md-color-scheme="slate"] .ps-footer__brand-name {
+  color: #e8e8e8;
+}
+
+.ps-footer__copyright {
+  font-size: 0.8rem;
+  color: #8494A7;
+  margin: 0;
+}
+
+/* ── MkDocs Footer (prev/next nav) ── */
 .md-footer {
   background-color: #EFF2F9;
   color: #424242;
