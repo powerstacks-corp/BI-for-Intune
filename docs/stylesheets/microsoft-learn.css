@@ -78,7 +78,8 @@
 .md-banner__inner {
   display: flex !important;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
   width: 100%;
   max-width: 100% !important;
   padding: 0 1.2rem !important;
@@ -104,6 +105,8 @@
   text-decoration: none !important;
   color: #ffffff !important;
   flex-shrink: 0;
+  position: absolute;
+  left: 1.2rem;
 }
 
 .ps-global-nav__brand:hover {
@@ -228,9 +231,14 @@
   }
 }
 
-/* ── Header — hidden (branding in global nav instead) ── */
+/* ── Header — collapsed but kept in DOM for tab support ── */
 .md-header {
-  display: none;
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 /* ── Navigation tabs — PowerStacks secondary bar ── */
