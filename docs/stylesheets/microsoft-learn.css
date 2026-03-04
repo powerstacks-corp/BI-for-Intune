@@ -228,20 +228,9 @@
   }
 }
 
-/* ── Header — PowerStacks branded gradient ── */
+/* ── Header — hidden (branding in global nav instead) ── */
 .md-header {
-  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-
-[data-md-color-scheme="slate"] .md-header {
-  background: #0A1F5E;
-  border-bottom: 1px solid #1a2d6e;
-}
-
-.md-header__title {
-  font-weight: 600;
-  font-size: 0.95rem;
+  display: none;
 }
 
 /* ── Navigation tabs — PowerStacks secondary bar ── */
