@@ -329,7 +329,11 @@
   font-size: 0.85rem;
 }
 
-/* ── Content area — full width ── */
+/* ── Content area — full width, flush with tabs ── */
+.md-main__inner {
+  margin-top: 0;
+}
+
 .md-content {
   max-width: none;
 }
