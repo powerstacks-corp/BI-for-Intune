@@ -41,7 +41,11 @@ hide:
 
 ## Comprehensive reporting for Microsoft Intune
 
-BI for Intune is a Power BI template app available on Microsoft AppSource that provides comprehensive reporting for Microsoft Intune.
+BI for Intune is a Power BI template app that connects directly to your Intune environment via the Microsoft Graph API. No agents on endpoints, no vendor portal — your data stays in your Power BI workspace, governed by your Microsoft 365 tenant policies.
+
+Pre-built dashboards cover device health, compliance, discovered applications, Windows Update for Business, and custom inventory collection. Drill through from fleet-level summaries to individual devices, track OS versions, hardware models, encryption status, and Autopilot enrollment — all with automatic refresh on your schedule.
+
+Extend your reporting with PowerShell-based inventory scripts for BitLocker, local admins, monitors, USB devices, and more. Optional Log Analytics integration provides extended data retention and advanced querying capabilities.
 
 ---
 
