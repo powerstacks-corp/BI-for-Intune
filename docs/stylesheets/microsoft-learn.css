@@ -21,10 +21,10 @@
  *   Header:           #0A1F5E  (navy light)
  *   Tabs:             #030C2A  (deeper navy)
  *
- * Typography:
- *   Headings:         #2F5496  (deep blue, light mode only)
- *   Body Text:        #6A7C92  (soft grey-blue)
- *   Body Text Light:  #8494A7  (lighter variant)
+ * Typography (matches website):
+ *   Headings:         #051441  (brand navy, light mode only)
+ *   Body Text:        #4B5563  (Tailwind gray-600)
+ *   Body Text Light:  #6B7280  (Tailwind gray-500)
  *
  * Semantic (unchanged):
  *   Note:    #4A5CF5 (purple, matches brand)
@@ -41,9 +41,9 @@
   --md-primary-fg-color--dark: #3221AA;
   --md-accent-fg-color: #4A5CF5;
   --md-default-bg-color: #ffffff;
-  --md-default-fg-color: #6A7C92;
-  --md-default-fg-color--light: #8494A7;
-  --md-typeset-color: #6A7C92;
+  --md-default-fg-color: #4B5563;
+  --md-default-fg-color--light: #6B7280;
+  --md-typeset-color: #4B5563;
 }
 
 [data-md-color-scheme="slate"] {
@@ -333,7 +333,7 @@
   font-weight: 600;
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #2F5496;
+  color: #051441;
   border-bottom: none;
 }
 
@@ -343,7 +343,7 @@
   margin-top: 2rem;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid #e1e1e1;
-  color: #2F5496;
+  color: #051441;
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1,
@@ -361,13 +361,13 @@
   font-weight: 600;
   font-size: 1.15rem;
   margin-top: 1.5rem;
-  color: #2F5496;
+  color: #051441;
 }
 
 .md-typeset h4 {
   font-weight: 600;
   font-size: 1rem;
-  color: #2F5496;
+  color: #051441;
 }
 
 /* ── Tables — clean style ── */
@@ -501,7 +501,7 @@
   border-top: 1px solid #dde3ed;
   padding: 3rem 1.5rem 0;
   font-size: 0.85rem;
-  color: #6A7C92;
+  color: #4B5563;
 }
 
 [data-md-color-scheme="slate"] .ps-footer {
@@ -533,7 +533,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #2F5496;
+  color: #051441;
   margin: 0 0 0.75rem 0;
 }
 
@@ -552,7 +552,7 @@
 }
 
 .ps-footer__list a {
-  color: #8494A7;
+  color: #6B7280;
   text-decoration: none;
   font-size: 0.8rem;
   transition: color 0.15s;
@@ -580,7 +580,7 @@
 }
 
 .ps-footer__contact a {
-  color: #8494A7;
+  color: #6B7280;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -591,7 +591,7 @@
 
 .ps-footer__contact-label {
   font-weight: 600;
-  color: #2F5496;
+  color: #051441;
 }
 
 [data-md-color-scheme="slate"] .ps-footer__contact-label {
@@ -629,7 +629,7 @@
 .ps-footer__brand-name {
   font-size: 1.05rem;
   font-weight: 700;
-  color: #2F5496;
+  color: #051441;
 }
 
 [data-md-color-scheme="slate"] .ps-footer__brand-name {
@@ -638,7 +638,7 @@
 
 .ps-footer__copyright {
   font-size: 0.8rem;
-  color: #8494A7;
+  color: #6B7280;
   margin: 0;
 }
 
