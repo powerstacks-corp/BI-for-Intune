@@ -73,6 +73,7 @@
 /* ── Global nav bar — PowerStacks branded ── */
 .md-banner {
   background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%) !important;
+  overflow: hidden !important;
 }
 
 .md-banner__inner {
@@ -671,11 +672,24 @@
   background: #555;
 }
 
-/* ── Hero banner — PowerStacks gradient ── */
+/* ── Hero banner — PowerStacks gradient, full-width flush with tabs ── */
+.md-content__inner > .hero-banner:first-child {
+  margin-top: -0.4rem; /* cancel .md-content__inner::before spacer */
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-content__inner > .hero-banner:first-child {
+    margin-top: -1rem; /* cancel ::before + padding-top on mobile */
+  }
+}
+
 .hero-banner {
   background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
   padding: 3rem 2rem;
-  margin: -0.6rem -0.6rem 2rem -0.6rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 2rem;
+  box-sizing: border-box;
 }
 
 [data-md-color-scheme="slate"] .hero-banner {

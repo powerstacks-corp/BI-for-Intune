@@ -64,7 +64,9 @@ markdown_extensions:
 
 plugins:
   - search
-  - glightbox
+  - glightbox:
+      skip_classes:
+        - skip-lightbox
 
 nav:
   - Home: index.md
