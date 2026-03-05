@@ -19,7 +19,7 @@ Before Power BI can read data from the Log Analytics workspace, you must add the
 
 
 
-1. Login to **entra.microsoft.com** or **portal.azure.com** using a global administrator account.
+1. Log in to **entra.microsoft.com** or **portal.azure.com** using a global administrator account.
 1. Search for and select **App registrations**.
 1. Select your **Power BI app registration** for BI for Intune. (**Note:** The name may vary from what is shown in this doc.)
 ![](../images/Edit-App-Registration-1024x421.png)

@@ -19,7 +19,7 @@ Custom inventory data is sent to Log Analytics using the **Azure Monitor Logs In
 
 
 1. Navigate to the [Enhanced Inventory Deploy](https://github.com/powerstacks-corp/EnhancedInventoryDeploy) repository on GitHub.
-1. Click the **Deploy to Azure** button.
+1. Select the **Deploy to Azure** button.
 1. Select your target **Subscription** and **Resource group**.
 1. Choose whether to **create a new** Log Analytics workspace or **use an existing** one.
 1. When prompted for **Enterprise App Object Id**, paste the Object ID from the [Create Inventory App Registration](create-inventory-app-registration.md) guide.

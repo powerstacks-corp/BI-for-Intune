@@ -99,7 +99,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 
 
-1. Login to the [Power BI service](https://app.powerbi.com) using your favorite browser.
+1. Log in to the [Power BI service](https://app.powerbi.com) using your favorite browser.
 1. Go to your production BI for Intune workspace.
 1. Open the **Intune KPI Dashboard**. (The name might vary; it will be whatever you saved the .pbix file as in step 9 above.
 ![](../images/12-1024x552.png)

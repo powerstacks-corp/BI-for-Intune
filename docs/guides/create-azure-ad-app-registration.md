@@ -10,7 +10,7 @@ Synchronizing data from Intune, Azure AD, Log Analytics, and other cloud data so
 
 
 
-1. Login to **portal.azure.com** or **entra.microsoft.com** using a global administrator account.
+1. Log in to **portal.azure.com** or **entra.microsoft.com** using a global administrator account.
 1. Search for and select **App registrations**.
 1. Select **New registration**.
 ![](../images/New_Registration-1024x491.png)

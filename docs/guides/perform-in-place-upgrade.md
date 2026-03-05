@@ -12,7 +12,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 
 
 
-1. Login to **Power BI**.
+1. Log in to **Power BI**.
 1. Select **Apps**.
 1. Select **Get apps**.
 ![](../images/Get-App-1024x211.png)

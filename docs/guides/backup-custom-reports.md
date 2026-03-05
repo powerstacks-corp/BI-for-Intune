@@ -26,7 +26,7 @@ We strongly advise customers to always backup  their custom reports before perf
 
 
 1. Execute the code in the **code editor** or by running the .**ps1 file**.
-1. When prompted, **Sign-in** to Power BI.
+1. When prompted, **sign in** to Power BI.
 ![Sign in to Power BI](../images/Sign-in-2-599x1024.png)
 ### Step 3: Select apps to back up
 
@@ -64,5 +64,5 @@ v*
 
 
 1. When running in a shell you should see **output** describing what was **copied** to the **backup workspace**.
-1. Login to the **backup workspace** to confirm that your **custom reports** have been **copied** there.
+1. Log in to the **backup workspace** to confirm that your **custom reports** have been **copied** there.
 ![Backup Workspace - Output](../images/Output-1024x168.png)
