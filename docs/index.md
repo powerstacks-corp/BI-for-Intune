@@ -19,13 +19,13 @@ hide:
       <span class="card-title">Setup Guide</span>
     </span>
   </a>
-  <a class="quick-link-card" href="guides/dataset-parameters/">
+  <a class="quick-link-card" href="guides/create-azure-ad-app-registration/">
     <span class="card-icon">
       <img src="images/icon-how-to-guide.svg" alt="" class="skip-lightbox">
     </span>
     <span class="card-content">
       <span class="card-label">GUIDES</span>
-      <span class="card-title">Configuration</span>
+      <span class="card-title">Setup Guide</span>
     </span>
   </a>
   <a class="quick-link-card" href="release-notes/">
@@ -53,19 +53,35 @@ Extend your reporting with PowerShell-based inventory scripts for BitLocker, loc
 
 - [Install BI for Intune](guides/install-bi-for-intune.md)
 - [Request a Trial License](guides/request-a-trial-license.md)
-- [Create Azure AD App Registration](guides/create-azure-ad-app-registration.md)
+
+## Setup Guide
+
+- [Create App Registration](guides/create-azure-ad-app-registration.md)
 - [Configure the Dataset](guides/configure-the-dataset.md)
-
-## Guides
-
-Step-by-step instructions for configuring and customizing BI for Intune.
-
-- [Dataset Parameters](guides/dataset-parameters.md)
-- [Configure Log Analytics](guides/configure-log-analytics.md)
 - [Configure Data Sync](guides/configure-data-sync.md)
+- [Export API Parameter](guides/export-api-parameter.md)
+
+## Log Analytics Setup
+
+- [Connect Power BI to Log Analytics](guides/edit-azure-ad-app-registration.md)
+- [Dataset Settings for Log Analytics](guides/dataset-settings-for-custom-inventory.md)
+
+## Custom Inventory
+
+- [Create Inventory App Registration](guides/create-inventory-app-registration.md)
+- [Deploy Custom Inventory Resources](guides/configure-log-analytics.md)
 - [Windows Inventory Collection Script](guides/windows-inventory-collection-script.md)
 - [macOS Inventory Collection Script](guides/macos-inventory-collection-script.md)
+
+## WUfB Reports
+
+- [Windows Update for Business Reports](guides/wufb-reports.md)
+
+## Administration
+
+- [Dataset Parameters](guides/dataset-parameters.md)
 - [Backup Custom Reports](guides/backup-custom-reports.md)
+- [Perform In-place Upgrade](guides/perform-in-place-upgrade.md)
 
 ## Release Notes
 
