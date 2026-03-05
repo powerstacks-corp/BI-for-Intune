@@ -73,31 +73,31 @@ nav:
   - Getting Started:
     - Install BI for Intune: guides/install-bi-for-intune.md
     - Request a Trial License: guides/request-a-trial-license.md
-    - Create Azure AD App Registration: guides/create-azure-ad-app-registration.md
+  - Setup Guide:
+    - Create App Registration: guides/create-azure-ad-app-registration.md
     - Configure the Dataset: guides/configure-the-dataset.md
-  - Configuration:
-    - Dataset Parameters: guides/dataset-parameters.md
     - Configure Data Sync: guides/configure-data-sync.md
-    - Configure Log Analytics: guides/configure-log-analytics.md
     - Export API Parameter: guides/export-api-parameter.md
     - Cloud PC Export API Parameter: guides/cloud-pc-export-api-parameter.md
     - Enable Maps: guides/enable-maps.md
-    - WUfB Reports: guides/wufb-reports.md
+  - Custom Inventory:
+    - Configure Log Analytics: guides/configure-log-analytics.md
     - Dataset Settings for Custom Inventory: guides/dataset-settings-for-custom-inventory.md
-  - Inventory Scripts:
+    - Edit App Registration for Log Analytics: guides/edit-azure-ad-app-registration.md
     - Windows Inventory Collection Script: guides/windows-inventory-collection-script.md
     - macOS Inventory Collection Script: guides/macos-inventory-collection-script.md
-  - Maintenance:
+    - WUfB Reports: guides/wufb-reports.md
+  - Administration:
+    - Dataset Parameters: guides/dataset-parameters.md
+    - Azure AD App Permissions: guides/azure-ad-app-permissions.md
     - Backup Custom Reports: guides/backup-custom-reports.md
     - Perform In-place Upgrade: guides/perform-in-place-upgrade.md
     - Create Backup Workspace: guides/create-backup-workspace.md
-    - Edit App Registration for Log Analytics: guides/edit-azure-ad-app-registration.md
-    - Repair Broken Visuals: guides/repair-broken-visuals.md
   - Customization:
     - Installing a Custom Power BI Template: guides/installing-a-custom-power-bi-template.md
     - How to Edit BI for Intune Reports: guides/how-to-edit-bi-for-intune-reports.md
     - How to Create Popup Box Visuals: guides/how-to-create-popup-box-visuals.md
-    - Azure AD App Permissions: guides/azure-ad-app-permissions.md
+  - FAQ: guides/faq.md
   - Release Notes:
     - All Versions: release-notes/index.md
     - Version 65.0 (Feb. 21, 2026): release-notes/version-65-0-feb-21-2026.md
