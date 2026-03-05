@@ -695,7 +695,7 @@
 
 .hero-banner {
   background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-bottom: 2rem;
@@ -706,19 +706,26 @@
   background: linear-gradient(90deg, #241880 0%, #4058C8 100%);
 }
 
+.hero-banner h1,
+.hero-banner p {
+  max-width: 61rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
 .hero-banner h1 {
   color: #ffffff !important;
   font-size: 2.2rem;
   font-weight: 600;
-  margin: 0 0 0.5rem 0;
+  margin-bottom: 0.5rem;
   border-bottom: none !important;
 }
 
 .hero-banner p {
   color: rgba(255, 255, 255, 0.9) !important;
   font-size: 1rem;
-  margin: 0;
-  max-width: 600px;
 }
 
 /* ── Quick link cards — feature cards ── */
