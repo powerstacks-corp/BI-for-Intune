@@ -1,16 +1,18 @@
 ---
-title: "Configure Log Analytics"
+title: "Deploy Custom Inventory Resources"
 ---
-# Configure Log Analytics
+# Deploy Custom Inventory Resources
 Log Analytics is a tool in the Azure portal to edit and run log queries. We leverage Log Analytics as an inexpensive storage medium for storing custom inventory data collected from Windows and macOS devices. This data is then synchronized to Power BI to be used in BI for Intune.
 
 Custom inventory data is sent to Log Analytics using the **Azure Monitor Logs Ingestion API**. This requires deploying a set of Azure resources (Data Collection Endpoint, Data Collection Rule, and custom tables) which can be automated using our ARM template.
+
+!!! info "Already have a Log Analytics workspace?"
+    If you previously set up [WUfB Reports](wufb-reports.md) and already have a Log Analytics workspace, select **Use an existing workspace** in Step 1 below and point it to that workspace. Custom inventory and WUfB Reports **must share the same workspace**.
 
 **Prerequisites:**
 
 1. You must have already [created the Inventory App Registration](create-inventory-app-registration.md) and recorded the **Enterprise App Object ID**.
 2. The user deploying the ARM template requires **Owner** or **Contributor + User Access Administrator** on the target Azure subscription or resource group.
-3. If you are using [Windows Update for Business Reports](wufb-reports.md), you should use the same Log Analytics workspace for both WUfB Reports and custom inventory.
 
 ### Step 1: Deploy Azure Resources
 
@@ -20,7 +22,6 @@ Custom inventory data is sent to Log Analytics using the **Azure Monitor Logs In
 1. Click the **Deploy to Azure** button.
 1. Select your target **Subscription** and **Resource group**.
 1. Choose whether to **create a new** Log Analytics workspace or **use an existing** one.
-    - If you are using [Windows Update for Business Reports](wufb-reports.md), select **Use an existing workspace** and point it to your WUfB Reports workspace.
 1. When prompted for **Enterprise App Object Id**, paste the Object ID from the [Create Inventory App Registration](create-inventory-app-registration.md) guide.
 1. Select **Review + create** and then **Create**.
 
@@ -75,7 +76,7 @@ In this step you assign the **Log Analytics Reader** role to your **Power BI app
 
 1. Open the **Log Analytics workspace** in the Azure portal.
 1. On the **Overview** page (or **Properties**), locate and record the **Workspace ID**.
-1. This value is needed for the [Power BI dataset parameters](dataset-settings-for-custom-inventory.md).
+1. This value is needed for the [Dataset Settings for Log Analytics](dataset-settings-for-custom-inventory.md).
 
 !!! note
     The Workspace Primary Key is no longer needed. The inventory scripts now authenticate using the Logs Ingestion API with the app registration credentials from the [Create Inventory App Registration](create-inventory-app-registration.md) guide.
@@ -91,4 +92,10 @@ You should now have the following values recorded:
 | **Client Secret** | [Inventory App Registration](create-inventory-app-registration.md) | [Windows](windows-inventory-collection-script.md) / [macOS](macos-inventory-collection-script.md) inventory scripts |
 | **DceURI** | Step 2 — Deployment Outputs | [Windows](windows-inventory-collection-script.md) / [macOS](macos-inventory-collection-script.md) inventory scripts |
 | **DcrImmutableId** | Step 2 — Deployment Outputs | [Windows](windows-inventory-collection-script.md) / [macOS](macos-inventory-collection-script.md) inventory scripts |
-| **Workspace ID** | Step 4 — Log Analytics Workspace | [Power BI dataset parameters](dataset-settings-for-custom-inventory.md) |
+| **Workspace ID** | Step 4 — Log Analytics Workspace | [Dataset Settings for Log Analytics](dataset-settings-for-custom-inventory.md) |
+
+### Next Steps
+
+- **Deploy inventory scripts:** [Windows Inventory Collection Script](windows-inventory-collection-script.md) or [macOS Inventory Collection Script](macos-inventory-collection-script.md)
+- **Connect Power BI to Log Analytics:** If you haven't already, complete the [Log Analytics Setup](edit-azure-ad-app-registration.md) pages to allow Power BI to read data from the workspace.
+- **Also setting up WUfB Reports?** See [WUfB Reports](wufb-reports.md). The workspace you created (or selected) above will be shared.

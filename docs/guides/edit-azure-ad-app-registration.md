@@ -1,14 +1,17 @@
 ---
-title: "Edit App Registration for Log Analytics"
+title: "Connect Power BI to Log Analytics"
 ---
-# Edit the Power BI App Registration for Log Analytics
-Before Power BI can read custom inventory data from the Log Analytics workspace, you must add the **Log Analytics API** permissions to your **Power BI app registration** (the one created during the [BI for Intune installation](create-azure-ad-app-registration.md)).
+# Connect Power BI to Log Analytics
+Before Power BI can read data from the Log Analytics workspace, you must add the **Log Analytics API** permissions to your **Power BI app registration** (the one created during the [BI for Intune installation](create-azure-ad-app-registration.md)).
+
+!!! info "Required for both Custom Inventory and WUfB Reports"
+    This step is needed whenever Power BI reads data from a Log Analytics workspace, whether for [Custom Inventory](configure-log-analytics.md) data, [WUfB Reports](wufb-reports.md) data, or both.
 
 !!! note
     These steps may have been performed when originally creating the app registration (Steps 15-19 of [Create Azure AD App Registration](create-azure-ad-app-registration.md)). If so, you can skip this page.
 
 !!! info
-    This is for the **Power BI app registration** only. The [inventory app registration](configure-log-analytics.md) (used by the collection scripts) does not need this permission.
+    This is for the **Power BI app registration** only. The [inventory app registration](create-inventory-app-registration.md) (used by the collection scripts) does not need this permission.
 
 **Prerequisites:** The user performing this step requires Global Admin and Subscription Admin rights.
 

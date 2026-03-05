@@ -53,8 +53,8 @@ You should now have the following values ready:
 | **Tenant ID** | App Registration overview | [Windows](windows-inventory-collection-script.md) / [macOS](macos-inventory-collection-script.md) inventory scripts |
 | **Client ID** | App Registration overview | [Windows](windows-inventory-collection-script.md) / [macOS](macos-inventory-collection-script.md) inventory scripts |
 | **Client Secret** | Certificates & secrets | [Windows](windows-inventory-collection-script.md) / [macOS](macos-inventory-collection-script.md) inventory scripts |
-| **Enterprise App Object ID** | Enterprise applications overview | [Configure Log Analytics](configure-log-analytics.md) ARM template deployment |
+| **Enterprise App Object ID** | Enterprise applications overview | [Deploy Custom Inventory Resources](configure-log-analytics.md) ARM template deployment |
 
 ### Next Step
 
-Proceed to [Configure Log Analytics](configure-log-analytics.md) to deploy the Azure resources.
+Proceed to [Deploy Custom Inventory Resources](configure-log-analytics.md) to deploy the Azure resources.

@@ -36,12 +36,12 @@ You can copy the PowerShell script from our [GitHub](https://github.com/powersta
 
 1. Paste the **PowerShell** code into your favorite **script editor**.
 1. Locate the line starting with **$LogAPIMode** and ensure it is set to **"LogIngestionAPI"**.
-1. Enter the following values from the [Configure Log Analytics](configure-log-analytics.md) guide:
-    - **$TenantId** — Directory (Tenant) ID from Step 1
-    - **$ClientId** — Application (Client) ID from Step 1
-    - **$ClientSecret** — Client Secret Value from Step 1
-    - **$DceURI** — Data Collection Endpoint URI from Step 4
-    - **$DcrImmutableId** — DCR Immutable ID from Step 4
+1. Enter the following values from the [Create Inventory App Registration](create-inventory-app-registration.md) and [Deploy Custom Inventory Resources](configure-log-analytics.md) guides:
+    - **$TenantId** — Directory (Tenant) ID from [Create Inventory App Registration](create-inventory-app-registration.md)
+    - **$ClientId** — Application (Client) ID from [Create Inventory App Registration](create-inventory-app-registration.md)
+    - **$ClientSecret** — Client Secret Value from [Create Inventory App Registration](create-inventory-app-registration.md)
+    - **$DceURI** — Data Collection Endpoint URI from [Deploy Custom Inventory Resources](configure-log-analytics.md) Step 2
+    - **$DcrImmutableId** — DCR Immutable ID from [Deploy Custom Inventory Resources](configure-log-analytics.md) Step 2
 1. Save the script as a **.ps1** file. For example **CollectInventory.ps1**.
 ### Step 2: Enable warranty data collection
 

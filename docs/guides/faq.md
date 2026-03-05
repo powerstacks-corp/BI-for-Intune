@@ -9,11 +9,11 @@ We recommend configuring your dataset to refresh **up to 8 times per day** using
 
 ### My custom inventory data is not showing up in the reports. What should I check?
 
-1. Confirm that the **AzureAD LogAnalytics Enable** parameter is set to **TRUE** in the Power BI dataset settings. See [Dataset Settings for Custom Inventory](dataset-settings-for-custom-inventory.md).
+1. Confirm that the **AzureAD LogAnalytics Enable** parameter is set to **TRUE** in the Power BI dataset settings. See [Dataset Settings for Log Analytics](dataset-settings-for-custom-inventory.md).
 2. Verify that the **Workspace ID** is correct in the dataset parameters.
-3. Ensure the **Log Analytics Reader** role has been assigned to the Power BI app registration on the Log Analytics workspace. See [Configure Log Analytics](configure-log-analytics.md) Step 5.
+3. Ensure the **Log Analytics Reader** role has been assigned to the Power BI app registration on the Log Analytics workspace. See [Deploy Custom Inventory Resources](configure-log-analytics.md) Step 3.
 4. Check that the inventory script is running successfully on devices by reviewing the script logs on a test device.
-5. Confirm the gateway source credentials for `https://api.loganalytics.io/` are configured with **Anonymous** authentication. See [Dataset Settings for Custom Inventory](dataset-settings-for-custom-inventory.md) Step 5.
+5. Confirm the gateway source credentials for `https://api.loganalytics.io/` are configured with **Anonymous** authentication. See [Dataset Settings for Log Analytics](dataset-settings-for-custom-inventory.md) Step 5.
 
 ### How long does it take for WUfB Reports data to appear?
 
@@ -24,7 +24,7 @@ According to Microsoft, data should appear within approximately **24 hours** aft
 BI for Intune uses **two separate app registrations**:
 
 - **Power BI App Registration** — Requires Microsoft Graph permissions (DeviceManagement, Directory.Read.All, AuditLog.Read.All, etc.) and Log Analytics API Data.Read. See [Azure AD App Permissions](azure-ad-app-permissions.md) for the full list.
-- **Inventory App Registration** — Used by the inventory scripts to write data via the Logs Ingestion API. Requires the **Monitoring Metrics Publisher** role on the Data Collection Rule. See [Configure Log Analytics](configure-log-analytics.md) for setup.
+- **Inventory App Registration** — Used by the inventory scripts to write data via the Logs Ingestion API. Requires the **Monitoring Metrics Publisher** role on the Data Collection Rule. See [Create Inventory App Registration](create-inventory-app-registration.md) for setup.
 
 ### Where do I find the Export API URL?
 

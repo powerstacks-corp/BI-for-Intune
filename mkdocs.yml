@@ -80,14 +80,15 @@ nav:
     - Export API Parameter: guides/export-api-parameter.md
     - Cloud PC Export API Parameter: guides/cloud-pc-export-api-parameter.md
     - Enable Maps: guides/enable-maps.md
+  - Log Analytics Setup:
+    - Connect Power BI to Log Analytics: guides/edit-azure-ad-app-registration.md
+    - Dataset Settings for Log Analytics: guides/dataset-settings-for-custom-inventory.md
   - Custom Inventory:
     - Create Inventory App Registration: guides/create-inventory-app-registration.md
-    - Configure Log Analytics: guides/configure-log-analytics.md
-    - Dataset Settings for Custom Inventory: guides/dataset-settings-for-custom-inventory.md
-    - Edit App Registration for Log Analytics: guides/edit-azure-ad-app-registration.md
+    - Deploy Custom Inventory Resources: guides/configure-log-analytics.md
     - Windows Inventory Collection Script: guides/windows-inventory-collection-script.md
     - macOS Inventory Collection Script: guides/macos-inventory-collection-script.md
-    - WUfB Reports: guides/wufb-reports.md
+  - WUfB Reports: guides/wufb-reports.md
   - Administration:
     - Dataset Parameters: guides/dataset-parameters.md
     - Azure AD App Permissions: guides/azure-ad-app-permissions.md
