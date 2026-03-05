@@ -81,6 +81,7 @@ nav:
     - Cloud PC Export API Parameter: guides/cloud-pc-export-api-parameter.md
     - Enable Maps: guides/enable-maps.md
   - Custom Inventory:
+    - Create Inventory App Registration: guides/create-inventory-app-registration.md
     - Configure Log Analytics: guides/configure-log-analytics.md
     - Dataset Settings for Custom Inventory: guides/dataset-settings-for-custom-inventory.md
     - Edit App Registration for Log Analytics: guides/edit-azure-ad-app-registration.md
