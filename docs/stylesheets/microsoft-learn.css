@@ -330,8 +330,14 @@
 }
 
 /* ── Content area — full width, flush with tabs ── */
+.md-main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 .md-main__inner {
   margin-top: 0;
+  padding-top: 0;
 }
 
 .md-content {
