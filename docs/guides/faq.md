@@ -5,7 +5,13 @@ title: "FAQ"
 
 ### How often should I refresh my dataset?
 
-We recommend configuring your dataset to refresh **up to 8 times per day** using the Power BI scheduled refresh feature. See [Configure Data Sync](configure-data-sync.md) for setup instructions.
+Power BI allows up to **8 scheduled refreshes per day** depending on your license. How many you need depends on your organization:
+
+- **1-2 time zones:** Most customers do **3 refreshes per day** — around 6 AM, noon, and 6 PM — which keeps reports current throughout the workday.
+- **Geographically diverse:** Organizations spanning many time zones typically schedule **more frequent refreshes** to keep data fresh across regions.
+- **Large environments:** If your dataset refresh takes a long time, consider **fewer refreshes** to avoid high utilization of your Premium capacity.
+
+See [Configure Data Sync](configure-data-sync.md) for setup instructions.
 
 ### My custom inventory data is not showing up in the reports. What should I check?
 
