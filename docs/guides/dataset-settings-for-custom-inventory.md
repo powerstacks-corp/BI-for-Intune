@@ -8,14 +8,10 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 
 
-
-
 1. Select **Workspaces**.
 1. Select the **BI for Intune** workspace.
 ![bi for intune workspace](../images/bi_for_intune_workspace.png)
 ### Step 2: Open semantic model settings
-
-
 
 
 
@@ -27,25 +23,19 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 
 
-
-
 1. Expand **Parameters**.
 1. Locate the **AzureAD LogAnalytics Enable** field and change the value from FALSE to **TRUE**.
-1. Locate the **AzureAD LogAnalytics WorkspaceID**field and enter the **Log Analytics Workspace ID**that you recorded during the [**Configuring Log Analytics  **](configure-log-analytics.md)step.
+1. Locate the **AzureAD LogAnalytics WorkspaceID** field and enter the **Log Analytics Workspace ID** that you recorded during [Configure Log Analytics](configure-log-analytics.md) Step 6.
 1. Select **Apply**.
 ![](../images/Intune_Enable_Log_Analytics-538x1024.png)
 ### Step 4: Edit gateway source credentials
 
 
 
-
-
 1. Expand **Gateway source credentials**.
-1. One of the four **Web**data sources should have an "**X**" next to it, select **Edit credentials** on that line.
+1. One of the four **Web** data sources should have an "**X**" next to it, select **Edit credentials** on that line.
 ![](../images/intune-edit-credentials-2.png)
 ### Step 5: Configure Log Analytics credentials
-
-
 
 
 

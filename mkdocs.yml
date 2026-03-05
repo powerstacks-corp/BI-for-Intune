@@ -91,7 +91,7 @@ nav:
     - Backup Custom Reports: guides/backup-custom-reports.md
     - Perform In-place Upgrade: guides/perform-in-place-upgrade.md
     - Create Backup Workspace: guides/create-backup-workspace.md
-    - Edit Azure AD App Registration: guides/edit-azure-ad-app-registration.md
+    - Edit App Registration for Log Analytics: guides/edit-azure-ad-app-registration.md
     - Repair Broken Visuals: guides/repair-broken-visuals.md
   - Customization:
     - Installing a Custom Power BI Template: guides/installing-a-custom-power-bi-template.md

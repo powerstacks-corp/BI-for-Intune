@@ -27,20 +27,22 @@ This data is collected via PowerShell, sent to a Log Analytics workspace, and th
 1. Lenovo requires a client token. Unlike Dell, this process is less straightforward—you’ll need to contact your Lenovo account representative to request the token on your behalf.
 1. HP requires both an API key and a secret. Note that the secret expires frequently. During our testing, the HP API was often unreliable; however, their support team was responsive, and it’s encouraging to see HP making the API available to customers again. You can initiate access by contacting your HP representative or by signing up at [https://developers.hp.com/](https://developers.hp.com/).
 
-You can copy the PowerShell script from our [GitHub](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) repository.
+You can copy the PowerShell script from our [GitHub](https://github.com/powerstacks-corp/Windows-Custom-Inventory) repository.
 ![github mark](../images/github-mark-80x80.png)
 
-### Step 1: Configure the script credentials
-
-
+### Step 1: Configure the script for Log Ingestion API
 
 
 
 1. Paste the **PowerShell** code into your favorite **script editor**.
-1. On the line starting with **$CustomerId =**enter your Log Analytics **Workspace ID** between the quotes.
-1. On the line starting with **$SharedKey =**enter your Log Analytics Workspace **Primary Key** between the quotes.
+1. Locate the line starting with **$LogAPIMode** and ensure it is set to **"LogIngestionAPI"**.
+1. Enter the following values from the [Configure Log Analytics](configure-log-analytics.md) guide:
+    - **$TenantId** — Directory (Tenant) ID from Step 1
+    - **$ClientId** — Application (Client) ID from Step 1
+    - **$ClientSecret** — Client Secret Value from Step 1
+    - **$DceURI** — Data Collection Endpoint URI from Step 4
+    - **$DcrImmutableId** — DCR Immutable ID from Step 4
 1. Save the script as a **.ps1** file. For example **CollectInventory.ps1**.
-![](../images/Inventory-Script-1024x372.png)
 ### Step 2: Enable warranty data collection
 
 

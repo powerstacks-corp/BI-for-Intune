@@ -10,20 +10,22 @@ This data is collected via a bash script, sent to a Log Analytics workspace, and
 
 We created this script at the request of a customer. It collects the installed software from macOS and sends that to Log Analytics just like our PowerShell script does on Windows. You can deploy the script as a Shell script from Intune. Ideally the script should be run once per day on each device. This way any changes to the device get captured.
 
-Below is the inventory script for macOS:
+You can copy the bash script from our [GitHub](https://github.com/powerstacks-corp/Mac-Custom-Inventory) repository.
 ![github mark](../images/github-mark-80x80.png)
 
-### Step 1: Configure the script credentials
-
-
+### Step 1: Configure the script for Log Ingestion API
 
 
 
 1. Paste the **script** code into your favorite **script editor**.
-1. On the line starting with **CustomerId =**enter your Log Analytics **Workspace ID** between the quotes.
-1. On the line starting with **SharedKey =**enter your Log Analytics Workspace **Primary Key** between the quotes.
+1. Locate the line starting with **LogAPIMode** and ensure it is set to **"LogIngestionAPI"**.
+1. Enter the following values from the [Configure Log Analytics](configure-log-analytics.md) guide:
+    - **TenantId** — Directory (Tenant) ID from Step 1
+    - **ClientId** — Application (Client) ID from Step 1
+    - **ClientSecret** — Client Secret Value from Step 1
+    - **DceURI** — Data Collection Endpoint URI from Step 4
+    - **DcrImmutableId** — DCR Immutable ID from Step 4
 1. Save the edited script.
-![intune macos script](../images/intune_macos_script-1024x320.png)
 ### Step 2: Deploy the script in Intune
 
 
