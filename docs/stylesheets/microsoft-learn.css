@@ -336,8 +336,16 @@
 }
 
 .md-main__inner {
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.md-content__inner {
+  padding-top: 0 !important;
+}
+
+.md-content__inner::before {
+  display: none !important;
 }
 
 .md-content {
@@ -683,15 +691,6 @@
 }
 
 /* ── Hero banner — PowerStacks gradient, full-width flush with tabs ── */
-.md-content__inner > .hero-banner:first-child {
-  margin-top: -0.4rem; /* cancel .md-content__inner::before spacer */
-}
-
-@media screen and (max-width: 44.984375em) {
-  .md-content__inner > .hero-banner:first-child {
-    margin-top: -1rem; /* cancel ::before + padding-top on mobile */
-  }
-}
 
 .hero-banner {
   background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
