@@ -8,8 +8,6 @@ Several of the pages in the out-of-the-box reports contain the map visual. If th
 
 
 
-
-
 1. In **Power BI** select the **Settings** icon.
 1. Select **Admin portal**.
 ![](../images/Admin_Portal_settings-1-465x1024.png)
@@ -17,10 +15,8 @@ Several of the pages in the out-of-the-box reports contain the map visual. If th
 
 
 
-
-
-1. Select **Tenant settings.**
-1. In the **Integration settings**section expand **Use Azure Maps visual.**
-1. Select **Enabled.**
-1. Select **Apply.**
+1. Select **Tenant settings**.
+1. In the **Integration settings** section expand **Use Azure Maps visual**.
+1. Select **Enabled**.
+1. Select **Apply**.
 ![](../images/Enable_Maps-1.png)

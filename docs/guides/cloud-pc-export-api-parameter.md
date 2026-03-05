@@ -41,7 +41,7 @@ This is only required for customers who want to use the Cloud PC report pages.
 1. On the **Network tab** of the Developer pane in the browser you will see several lines that start with **TotalAggregatedRemoteConnectionReports_** followed by a line that has a seemingly **random GUID** as the name.
 1. Select the first line after the last instance of lines starting with **TotalAggregatedRemoteConnectionReports_**, this should be the line starting with a **GUID**.
 1. The header of this line will contain the **Request URL**.
-1. Copy the **Request URL**from**https to .net**(you don't need anything after .net) and save it for use later. It should look something like this, "**https://cpccrsaresexpprna01.blob.core.windows.net**".
+1. Copy the **Request URL** from `https` to `.net` (you don't need anything after .net) and save it for use later. It should look something like this: `https://cpccrsaresexpprna01.blob.core.windows.net`.
 ![](../images/Request-URL-1024x855.png)
 ### Step 5: Open semantic model settings
 

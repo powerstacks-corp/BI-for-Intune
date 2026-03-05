@@ -47,7 +47,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 
 1. Select **Export**.
-1. Select **Yes**at the prompt to export a .csv.
+1. Select **Yes** at the prompt to export a .csv.
 ![](../images/Export-1024x530.png)
 ### Step 6: Copy the export Request URL
 
@@ -57,7 +57,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 1. On the **Network tab** of the Developer pane in the browser watch for the the line starting with **WindowsUpdatePerPolicyPerDeviceStatus**.
 1. Select the line starting with **WindowsUpdatePerPolicyPerDeviceStatus**, this will contain the the **Request URL**.
-1. Copy the **Request URL**and save it for use later. It should look something like this, "**https://amsua0401repexpstorage.blob.core.windows.net**".
+1. Copy the **Request URL** and save it for use later. It should look something like this: `https://amsua0401repexpstorage.blob.core.windows.net`.
 ![](../images/Request-URL-1024x855.png)
 ### Step 7: Open dataset settings in Power BI
 

@@ -77,7 +77,7 @@ You can copy the PowerShell script from our [GitHub](https://github.com/powersta
 
 
 
-1. Select R**emediations**.
+1. Select **Remediations**.
 1. Select **Create**.
 ![create remediation](../images/create-remediation-1024x807.png)
 ### Step 6: Enter remediation details

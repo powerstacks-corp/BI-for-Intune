@@ -8,14 +8,10 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 
 
-
-
 1. Select **Workspaces**.
 1. Select the **BI for Intune** workspace.
 ![](../images/BI-for-Intune-Dataset.png)
 ### Step 2: Open dataset settings
-
-
 
 
 
@@ -28,18 +24,18 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 
 
-
-
 1. Expand **Parameters**.
-1. Enter the **API Key** that you received from us after completing the [**Request a Trail Key**](request-a-trial-license.md) form.
-1. Enter your **Azure AD tenant ID**that you recorded during the configuration of the [**Azure AD App Registration**](create-azure-ad-app-registration.md).
-1. Enter the **Azure AD Client ID** that you recorded during the configuration of the [**Azure AD App Registration**](create-azure-ad-app-registration.md)[.](create-azure-ad-app-registration.md)
-1. Enter the **Azure AD Client Secret** that you recorded during the configuration of the [**Azure AD App Registration**](create-azure-ad-app-registration.md). As mentioned in the previous article the **Client Secret** **does not** have dashes (-) in it. The **Client Secret** **looks similar** to this: **aBcDE~fGh.I.JKlmnopqRsTuVwXyZ1234567890****NOTE**: The most common mistake made when installing BI for Intune is on this step! The client secret **does not** **look like** this: **2f51572d-24ac-43bb-a73a-d3c346b69a45** it **does look like** this: **aBcDE~fGh.I.JKlmnopqRsTuVwXyZ1234567890**.
-Select **Apply**.
+1. Enter the **API Key** that you received from us after completing the [Request a Trial Key](request-a-trial-license.md) form.
+1. Enter your **Azure AD tenant ID** that you recorded during the configuration of the [Azure AD App Registration](create-azure-ad-app-registration.md).
+1. Enter the **Azure AD Client ID** that you recorded during the configuration of the [Azure AD App Registration](create-azure-ad-app-registration.md).
+1. Enter the **Azure AD Client Secret** that you recorded during the configuration of the [Azure AD App Registration](create-azure-ad-app-registration.md). The client secret does not have dashes (-) in it. It looks similar to this: `aBcDE~fGh.I.JKlmnopqRsTuVwXyZ1234567890`
+
+    !!! warning
+        The most common mistake made when installing BI for Intune is on this step! The client secret does **not** look like this: `2f51572d-24ac-43bb-a73a-d3c346b69a45` — it **does** look like this: `aBcDE~fGh.I.JKlmnopqRsTuVwXyZ1234567890`.
+
+1. Select **Apply**.
 ![all parameters](../images/all_parameters-152x1024.png)
 ### Step 4: Expand Data Source Credentials
-
-
 
 
 
@@ -49,9 +45,12 @@ Select **Apply**.
 
 
 
+1. Select each occurrence of **Edit credentials** one by one and configure each as follows:
 
+    !!! note
+        Depending upon your configuration you may or may not have all of the referenced credentials.
 
-1. Select each occurrence of **Edit credentials** one by one and configure each as follows: (**Note**: Depending upon your configuration you may or may not have all of the referenced credentials)Select **Anonymous** as the **Authentication method** and **Organizational** as the **Privacy level**for all credentials.
-1. Select **Skip test connection** ONLY where the URL is **https://api.loganlytics.io** and/or similar to **https://amsua0401repexpstorage.blob.core.windows.net**
-Select **Sign in** on each of the credentials.
+1. Select **Anonymous** as the **Authentication method** and **Organizational** as the **Privacy level** for all credentials.
+1. Select **Skip test connection** only where the URL is `https://api.loganalytics.io` and/or similar to `https://amsua0401repexpstorage.blob.core.windows.net`.
+1. Select **Sign in** on each of the credentials.
 ![](../images/intune_migration_skip_test_1.png)

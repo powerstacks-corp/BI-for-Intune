@@ -6,7 +6,7 @@ We strongly advise customers to always backup their custom reports before perfor
 
 Our backup process consists of creating a new workspace by installing a second instance of BI for Intune. There is no need to configure this instance, it's just a placeholder to which our script, documented in our "[Backup Custom Reports](backup-custom-reports.md)" document, copies all of your custom reports in case something goes wrong during the upgrade. In the unlikely event that the upgrade fails it may be necessary to configure the backup workspace and move it to production.
 
-**Prerequisites:**The user executing these steps should be an administrator of the BI for Intune workspace.
+**Prerequisites:** The user executing these steps should be an administrator of the BI for Intune workspace.
 
 ### Step 1: Open Power BI AppSource
 
@@ -51,7 +51,7 @@ Our backup process consists of creating a new workspace by installing a second i
 
 
 
-1. Select I**nstall another copy of the app into a new workspace**.
+1. Select **Install another copy of the app into a new workspace**.
 1. Enter a name for the new workspace.
 1. Select **Install**.
 ![](../images/New_Backup_Workspace.png)

@@ -19,7 +19,7 @@ The BI for Intune dataset contains some parameters that must be configured in or
 
 
 
-1. Hover over the bi_for_intune **Sematic mode**l to reveal a **kebab menu** (three vertical dots).
+1. Hover over the bi_for_intune **Semantic model** to reveal a **kebab menu** (three vertical dots).
 1. Select the **kebab menu**.
 1. Select **Settings**.
 ![intune model settings](../images/intune_model_settings-1024x1013.png)

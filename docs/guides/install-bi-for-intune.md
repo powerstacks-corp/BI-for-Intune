@@ -20,7 +20,7 @@ To get started select the "**Install Now**" button to be directed to Microsoft A
 
 
 1. Select the "**Install Now**" button above.
-1. On the**BI for Intune** page in **Microsoft AppSource** select **Get it now**.
+1. On the **BI for Intune** page in **Microsoft AppSource** select **Get it now**.
 ![](../images/Intune_Get_it_now-1024x593.png)
 ### Step 2: Sign in with your work email
 

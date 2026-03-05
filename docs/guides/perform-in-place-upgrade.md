@@ -4,7 +4,7 @@ title: "Perform In-place Upgrade"
 # Perform In-place Upgrade
 We strongly advise customers to always [backup](backup-custom-reports.md) their custom reports before performing any in-place upgrades. Failure to do so could result in the loss of your custom reports!
 
-**Prerequisites:**The user executing these steps should be the owner of the BI for Intune workspace.
+**Prerequisites:** The user executing these steps should be the owner of the BI for Intune workspace.
 
 ### Step 1: Open Power BI AppSource
 
@@ -40,7 +40,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 
 
 
-1. Select **Get it Now.**
+1. Select **Get it Now**.
 ![bi for intune continue](../images/bi_for_intune_continue.png)
 ### Step 5: Update the existing workspace
 
@@ -49,7 +49,7 @@ We strongly advise customers to always [backup](backup-custom-reports.md) their 
 
 
 1. Select **Update the workspace and the app**.
-1. Select your **production**BI for Intune **workspace**.
+1. Select your production **BI for Intune** workspace.
 1. Select **Install**.
 ![bi for intune update app](../images/bi_for_intune_update_app-1024x746.png)
 ### Step 6: Confirm the upgrade completed
