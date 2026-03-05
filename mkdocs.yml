@@ -76,9 +76,9 @@ nav:
   - Setup Guide:
     - Create App Registration: guides/create-azure-ad-app-registration.md
     - Configure the Dataset: guides/configure-the-dataset.md
-    - Configure Data Sync: guides/configure-data-sync.md
     - Export API Parameter: guides/export-api-parameter.md
     - Cloud PC Export API Parameter: guides/cloud-pc-export-api-parameter.md
+    - Configure Data Sync: guides/configure-data-sync.md
     - Enable Maps: guides/enable-maps.md
   - Log Analytics Setup:
     - Connect Power BI to Log Analytics: guides/edit-azure-ad-app-registration.md
