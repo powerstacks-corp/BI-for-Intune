@@ -11,7 +11,7 @@ Now, we’re taking things a step further by introducing a GitHub repository to 
 
 In addition to accessing our curated templates, you’ll have the opportunity to collaborate with the broader Intune and PowerStacks communities. We encourage our customers to contribute their own templates to the repository, fostering a space for shared knowledge and innovation.
 
-Please note that these custom templates are provided "as-is," without warranty or formal support. This allows us to keep this repository a dynamic and collaborative resource for everyone involved.
+Note that these custom templates are provided "as-is," without warranty or formal support. This allows us to keep this repository a dynamic and collaborative resource for everyone involved.
 
 We’re thrilled to offer this new way to enhance your BI for Intune experience and look forward to seeing how these templates help you unlock even greater value from your Intune data. Let’s get started!
 ![github mark2](../images/github-mark2-80x80.png)
@@ -25,8 +25,8 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 1. Ensure that you have the latest version of Power BI desktop installed.
 1. Ensure that BI for Intune has been [upgraded](perform-in-place-upgrade.md) to the latest version.
-1. Download a .pbit file from our [Github](https://github.com/PowerStacks-BI/BI-for-Intune).
-1. Open Power BI desktop and login using the same credentials that you use to view BI for Intune reports in the Power BI service.
+1. Download a .pbit file from our [Github](https://github.com/powerstacks-corp/BI-for-Intune).
+1. Open Power BI desktop and log in using the same credentials that you use to view BI for Intune reports in the Power BI service.
 1. Open the .pbit file in Power BI desktop.
 ![](../images/1.png)
 ### Step 2: Dismiss the connection dialog
@@ -35,7 +35,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 
 
-1. On the **Unable to Connect** dialog box select **Edit.**
+1. On the **Unable to Connect** dialog select **Edit.**
 ![3](../images/3.png)
 ### Step 3: Ignore warning messages
 
@@ -51,7 +51,7 @@ We’re thrilled to offer this new way to enhance your BI for Intune experience 
 
 
 
-1. On the **Select a dataset to create a report** dialog box select your production **BI_for_Intune** dataset then select **Create**.
+1. On the **Select a dataset to create a report** dialog select your production **BI_for_Intune** dataset then select **Create**.
 ![](../images/6-1024x562.png)
 ### Step 5: Save the report as .pbix
 

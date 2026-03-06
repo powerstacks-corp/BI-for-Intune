@@ -10,7 +10,7 @@ This is only required for customers who want to use the Cloud PC report pages.
 
 
 
-1. In the **Intune console** select the **Reports** blade.
+1. In the **Intune console** select the **Reports** pane.
 1. Select **Cloud PC overview**.
 1. Select **Cloud PC utilization**.
 ![cpc utilization](../images/cpc_utilization-1024x435.png)

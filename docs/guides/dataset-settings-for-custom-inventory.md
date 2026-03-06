@@ -2,7 +2,7 @@
 title: "Dataset Settings for Log Analytics"
 ---
 # Dataset Settings for Log Analytics
-The BI for Intune dataset contains some parameters that must be configured in order to synchronize data from Intune to Power BI. Other parameters, such as this one, add additional functionality to BI for Intune. In this article we configure the parameters required for **Log Analytics integration** (used by both [Custom Inventory](configure-log-analytics.md) and [WUfB Reports](wufb-reports.md)).
+The BI for Intune dataset contains some parameters that must be configured to synchronize data from Intune to Power BI. Other parameters, such as this one, add additional functionality to BI for Intune. In this article we configure the parameters required for **Log Analytics integration** (used by both [Custom Inventory](configure-log-analytics.md) and [WUfB Reports](wufb-reports.md)).
 
 ### Step 1: Open the BI for Intune workspace
 

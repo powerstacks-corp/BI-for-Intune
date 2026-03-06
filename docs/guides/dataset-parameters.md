@@ -2,7 +2,7 @@
 title: "Dataset Parameters"
 ---
 # Dataset Parameters Explained
-The BI for Intune dataset contains some parameters that must be configured in order to synchronize data from Intune to Power BI. Other parameters add additional functionality to BI for Intune. This article explains each of the parameters in detail.
+The BI for Intune dataset contains some parameters that must be configured to synchronize data from Intune to Power BI. Other parameters add additional functionality to BI for Intune. This article explains each of the parameters in detail.
 
 ### Step 1: Open the BI for Intune workspace
 

@@ -2,7 +2,7 @@
 title: "Export API Parameter"
 ---
 # Configure Intune Export API
-Microsoft have migrated some of the data that BI for Intune uses to the new Intune Export API. Each region in which Microsoft host Intune has a unique download URL that is sent as a response to queries made against this API. For this reason we have introduced new dataset parameters that should be configured in order for this data be imported into Power BI. Configuring these parameters are not mandatory, however if you do not configure these parameters as described here BI for Intune will make a call to a redirect API owned by [Fatstacks](http://ec2-34-220-217-132.us-west-2.compute.amazonaws.com/wordpress/migrate-from-fatstacks-to-powerstacks-bi-for-intune/). The purpose of the redirect API is to automate locating the correct download URL for your Intune tenant and pass that URL back to BI for Intune in order to download content from the Export API to Power BI. No protected data is passed through Fatstacks if you leverage the redirect API. However, we recommend that customers follow this guide to bypass using our redirect API altogether.
+Microsoft have migrated some of the data that BI for Intune uses to the new Intune Export API. Each region in which Microsoft host Intune has a unique download URL that is sent as a response to queries made against this API. For this reason we have introduced new dataset parameters that should be configured for this data be imported into Power BI. Configuring these parameters are not mandatory, however if you do not configure these parameters as described here BI for Intune will make a call to a redirect API owned by [Fatstacks](http://ec2-34-220-217-132.us-west-2.compute.amazonaws.com/wordpress/migrate-from-fatstacks-to-powerstacks-bi-for-intune/). The purpose of the redirect API is to automate locating the correct download URL for your Intune tenant and pass that URL back to BI for Intune to download content from the Export API to Power BI. No protected data is passed through Fatstacks if you leverage the redirect API. However, we recommend that customers follow this guide to bypass using our redirect API altogether.
 
 ### Step 1: Open Windows Updates report
 
@@ -10,7 +10,7 @@ Microsoft have migrated some of the data that BI for Intune uses to the new Intu
 
 
 
-1. In the **Intune console** select the **Reports** blade.
+1. In the **Intune console** select the **Reports** pane.
 1. Select **Windows Updates (preview)**.
 ![](../images/Windows-Updates-Preview-Report-1024x728.png)
 ### Step 2: Open Feature Update report
