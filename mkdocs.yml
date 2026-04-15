@@ -65,6 +65,15 @@ plugins:
   - glightbox:
       skip_classes:
         - skip-lightbox
+  - rss:
+      match_path: "release-notes/.*|guides/.*"
+      date_from_meta:
+        as_creation: date
+      categories:
+        - tags
+      feed_ttl: 1440
+      length: 50
+      pretty_print: true
 
 nav:
   - Home: index.md
