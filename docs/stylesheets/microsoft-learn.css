@@ -882,3 +882,58 @@ html {
 .md-sidebar--secondary {
   padding-top: 1.5rem;
 }
+
+/* ── Hero-style page titles (matches website Hero component) ────────── */
+
+/* Style the first h1 of each page as a hero block with gradient background */
+.md-typeset h1:first-of-type {
+  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
+  color: #ffffff !important;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  padding: 2rem 2rem;
+  margin: -1.5rem -1.5rem 2rem -1.5rem;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle vignette overlay matching the website's hero styling */
+.md-typeset h1:first-of-type::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+  pointer-events: none;
+}
+
+/* Dark mode: subtly different gradient endpoints */
+[data-md-color-scheme="slate"] .md-typeset h1:first-of-type {
+  background: linear-gradient(90deg, #1e1380 0%, #3a4ec4 100%);
+}
+
+/* Slightly larger on bigger screens */
+@media (min-width: 1220px) {
+  .md-typeset h1:first-of-type {
+    font-size: 2.75rem;
+    padding: 2.5rem 2.5rem;
+  }
+}
+
+/* Mobile: tighten up */
+@media (max-width: 600px) {
+  .md-typeset h1:first-of-type {
+    font-size: 1.75rem;
+    padding: 1.5rem 1.25rem;
+    margin: -1rem -1rem 1.5rem -1rem;
+    border-radius: 6px;
+  }
+}
