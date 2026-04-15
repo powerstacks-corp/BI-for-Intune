@@ -58,6 +58,11 @@
   --md-code-bg-color: #2d2d2d;
 }
 
+/* ── Reset rem base to 16px (Material defaults to 137.5% which makes everything ~37% too big) ── */
+html {
+  font-size: 100%;
+}
+
 /* ── Typography — match Microsoft's Segoe UI stack ── */
 :root {
   --md-text-font: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
