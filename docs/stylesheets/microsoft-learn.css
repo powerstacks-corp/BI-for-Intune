@@ -858,3 +858,27 @@ html {
 .md-typeset h4:hover .headerlink {
   opacity: 0.5;
 }
+
+/* ── Issue fixes (Apr 15 2026) ────────────────────────────────────── */
+
+/* Make the global PowerStacks nav sticky so it stays visible when scrolling */
+.md-banner {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+/* Push the search header below the now-sticky banner (40px = banner height) */
+.md-header {
+  top: 40px !important;
+}
+
+/* Add top padding back to the main content area so it doesn't sit right against the header */
+.md-content__inner {
+  padding-top: 1.5rem !important;
+}
+
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  padding-top: 1.5rem;
+}
