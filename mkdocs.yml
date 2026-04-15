@@ -136,6 +136,7 @@ nav:
     - Version 34.0 (March 4, 2024): release-notes/version-34-0-march-4-2024.md
 
 extra:
+  marketing_url: !ENV [MARKETING_URL, "https://powerstacks.com"]
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/powerstacks-corp/BI-for-Intune
