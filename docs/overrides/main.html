@@ -3,16 +3,16 @@
 {% block announce %}
 <nav class="ps-global-nav" aria-label="PowerStacks global">
   <div class="ps-global-nav__inner">
-    <a href="https://scaling-barnacle-929qvrp.pages.github.io" class="ps-global-nav__brand" title="PowerStacks Home">
+    <a href="{{ config.extra.marketing_url }}" class="ps-global-nav__brand" title="PowerStacks Home">
       <img src="{{ config.site_url }}images/ps-logo.webp" alt="" class="ps-global-nav__logo" width="24" height="24" />
       <span class="ps-global-nav__brand-text">PowerStacks</span>
     </a>
     <div class="ps-global-nav__site-links">
-      <a href="https://scaling-barnacle-929qvrp.pages.github.io/solutions/endpoint-management-platform/">Solutions</a>
-      <a href="https://scaling-barnacle-929qvrp.pages.github.io/products/bi-for-intune/">Products</a>
-      <a href="https://scaling-barnacle-929qvrp.pages.github.io/pricing/">Pricing</a>
-      <a href="https://scaling-barnacle-929qvrp.pages.github.io/blog/">Blog</a>
-      <a href="https://scaling-barnacle-929qvrp.pages.github.io/docs/">Learn</a>
+      <a href="{{ config.extra.marketing_url }}/solutions/endpoint-management-platform/">Solutions</a>
+      <a href="{{ config.extra.marketing_url }}/products/bi-for-intune/">Products</a>
+      <a href="{{ config.extra.marketing_url }}/pricing/">Pricing</a>
+      <a href="{{ config.extra.marketing_url }}/blog/">Blog</a>
+      <a href="{{ config.extra.marketing_url }}/docs/">Learn</a>
     </div>
   </div>
 </nav>
@@ -28,23 +28,22 @@
           <li><a href="https://powerstacks-corp.github.io/BI-for-Intune/">BI for Intune</a></li>
           <li><a href="https://powerstacks-corp.github.io/BI-for-SCCM/">BI for SCCM</a></li>
           <li><a href="https://powerstacks-corp.github.io/BI-for-Defender/">BI for Defender</a></li>
-          <li><a href="https://powerstacks-corp.github.io/app-portal-for-intune/">App Portal for Intune</a></li>
         </ul>
       </div>
       <div class="ps-footer__col">
         <h3 class="ps-footer__heading">Resources</h3>
         <ul class="ps-footer__list">
-          <li><a href="https://scaling-barnacle-929qvrp.pages.github.io/docs/">Documentation</a></li>
-          <li><a href="https://scaling-barnacle-929qvrp.pages.github.io/blog/">Blog</a></li>
-          <li><a href="https://scaling-barnacle-929qvrp.pages.github.io/faq/">FAQ</a></li>
-          <li><a href="https://scaling-barnacle-929qvrp.pages.github.io/pricing/">Pricing</a></li>
+          <li><a href="{{ config.extra.marketing_url }}/docs/">Documentation</a></li>
+          <li><a href="{{ config.extra.marketing_url }}/blog/">Blog</a></li>
+          <li><a href="{{ config.extra.marketing_url }}/faq/">FAQ</a></li>
+          <li><a href="{{ config.extra.marketing_url }}/pricing/">Pricing</a></li>
         </ul>
       </div>
       <div class="ps-footer__col">
         <h3 class="ps-footer__heading">Company</h3>
         <ul class="ps-footer__list">
-          <li><a href="https://scaling-barnacle-929qvrp.pages.github.io/about/">About</a></li>
-          <li><a href="https://scaling-barnacle-929qvrp.pages.github.io/contact/">Contact</a></li>
+          <li><a href="{{ config.extra.marketing_url }}/about/">About</a></li>
+          <li><a href="{{ config.extra.marketing_url }}/contact/">Contact</a></li>
         </ul>
         <div class="ps-footer__contact">
           <p><span class="ps-footer__contact-label">Sales:</span> <a href="mailto:sales@powerstacks.com">sales@powerstacks.com</a></p>
