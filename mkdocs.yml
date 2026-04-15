@@ -1,2 +1,133 @@
 site_name: BI for Intune by PowerStacks
-site_
+site_description: Comprehensive Power BI reporting for Microsoft Intune
+site_url: https://powerstacks-corp.github.io/BI-for-Intune/
+
+repo_url: https://github.com/powerstacks-corp/BI-for-Intune
+repo_name: BI-for-Intune
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  font: false  # Disabled to use local Segoe UI from custom CSS instead of Google Fonts fallback
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: docs/overrides
+
+extra_css:
+  - stylesheets/microsoft-learn.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - glightbox:
+      skip_classes:
+        - skip-lightbox
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Install BI for Intune: guides/install-bi-for-intune.md
+    - Request a Trial License: guides/request-a-trial-license.md
+  - Setup Guide:
+    - Create App Registration: guides/create-azure-ad-app-registration.md
+    - Configure the Dataset: guides/configure-the-dataset.md
+    - Export API Parameter: guides/export-api-parameter.md
+    - Cloud PC Export API Parameter: guides/cloud-pc-export-api-parameter.md
+    - Configure Data Sync: guides/configure-data-sync.md
+    - Enable Maps: guides/enable-maps.md
+  - Log Analytics Setup:
+    - Connect Power BI to Log Analytics: guides/edit-azure-ad-app-registration.md
+    - Dataset Settings for Log Analytics: guides/dataset-settings-for-custom-inventory.md
+  - Custom Inventory:
+    - Create Inventory App Registration: guides/create-inventory-app-registration.md
+    - Deploy Custom Inventory Resources: guides/configure-log-analytics.md
+    - Windows Inventory Collection Script: guides/windows-inventory-collection-script.md
+    - macOS Inventory Collection Script: guides/macos-inventory-collection-script.md
+  - WUfB Reports: guides/wufb-reports.md
+  - Administration:
+    - Dataset Parameters: guides/dataset-parameters.md
+    - Azure AD App Permissions: guides/azure-ad-app-permissions.md
+    - Backup Custom Reports: guides/backup-custom-reports.md
+    - Perform In-place Upgrade: guides/perform-in-place-upgrade.md
+    - Create Backup Workspace: guides/create-backup-workspace.md
+  - Customization:
+    - Installing a Custom Power BI Template: guides/installing-a-custom-power-bi-template.md
+    - How to Edit BI for Intune Reports: guides/how-to-edit-bi-for-intune-reports.md
+    - How to Create Popup Box Visuals: guides/how-to-create-popup-box-visuals.md
+  - FAQ: guides/faq.md
+  - Release Notes:
+    - All Versions: release-notes/index.md
+    - Version 65.0 (Feb. 21, 2026): release-notes/version-65-0-feb-21-2026.md
+    - Version 64.0 (Feb. 15, 2026): release-notes/version-64-0-feb-15-2026.md
+    - Version 63.0 (Jan. 8, 2026): release-notes/version-63-0-jan-8-2026.md
+    - Version 62.0 (Jan. 4, 2026): release-notes/version-62-0-jan-4-2026.md
+    - Version 61.0 (Oct. 28, 2025): release-notes/version-61-0-oct-28-2025.md
+    - Version 60.0 (June 14, 2025): release-notes/version-60-0-june-14-2025.md
+    - Version 59.0 (May 27, 2025): release-notes/version-59-0-may-27-2025.md
+    - Version 58.0 (April 12, 2025): release-notes/version-58-0-april-12-2025.md
+    - Version 57.0 (Feb. 27, 2025): release-notes/version-57-0-feb-27-2025.md
+    - Versions 54.0 (Feb. 6, 2025): release-notes/versions-54-0-feb-6-2025.md
+    - Version 53.0 (Jan. 7, 2025): release-notes/version-53-0-jan-7-2025.md
+    - Version 51.0 (Dec. 16, 2024): release-notes/version-51-0-dec-16-2024.md
+    - Versions 49-50.0 (Nov. 14, 2024): release-notes/versions-49-50-0-nov-14-2024.md
+    - Version 48.0 (Oct. 14, 2024): release-notes/version-48-0-oct-14-2024.md
+    - Version 46.0 (Sept. 17, 2024): release-notes/version-46-0-sept-17-2024.md
+    - Version 45.0 (Sept. 15, 2024): release-notes/version-45-0-sept-15-2024.md
+    - Version 44.0 (Aug. 31, 2024): release-notes/version-44-0-aug-31-2024.md
+    - Version 42.0 (July 23, 2024): release-notes/version-42-0-july-23-2024.md
+    - Version 41.0 (June 17, 2024): release-notes/version-41-0-june-17-2024.md
+    - Version 40.0 (June 8, 2024): release-notes/version-40-0-june-8-2024.md
+    - Version 39.0 (May 13, 2024): release-notes/version-39-0-may-13-2024.md
+    - Version 38.0 (April 17, 2024): release-notes/version-38-0-april-17-2024.md
+    - Version 36.0 (March 22, 2024): release-notes/version-36-0-march-22-2024.md
+    - Version 35.0 (March 11, 2024): release-notes/version-35-0-march-11-2024.md
+    - Version 34.0 (March 4, 2024): release-notes/version-34-0-march-4-2024.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/powerstacks-corp/BI-for-Intune
+  generator: false
