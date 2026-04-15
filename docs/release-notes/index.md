@@ -17,7 +17,6 @@ This release adds the new User Sign-Ins Auth Details object, providing deeper vi
 These enhancements support improved investigation and reporting of user sign-in activity across your environment.
 
 
-# Version 65.0 Release Details
 
 
 ### New Features
@@ -52,7 +51,6 @@ Improved sync reliability and updated policy reporting ensure more accurate visi
 - Several customers have recently reported upgrade failures resulting in the loss of their custom reports. Please do not forget to [backup before you upgrade](backup-custom-reports.md)!
 
 
-# Version 64.0 Release Details
 
 
 ### Product Enhancements
@@ -102,7 +100,6 @@ Version 63 brings additional configuration profile type data to BI for Intune.
 Several customers have recently reported upgrade failures resulting in the loss of their custom reports. Please do not forget to [backup before you upgrade](backup-custom-reports.md)!
 
 
-# Version 63.0 Release Details
 
 
 ### Product Enhancements
@@ -146,7 +143,6 @@ Version 62 adds a new data source, the "Windows Distribution Report" data from I
 Several customers have recently reported upgrade failures resulting in the loss of their custom reports. Please do not forget to [backup before you upgrade](backup-custom-reports.md)!
 
 
-# Version 62.0 Release Details
 
 
 ### Product Enhancements
@@ -205,7 +201,6 @@ Version 61 mainly brings improved stability and better synchronization performan
 Several customers have recently reported upgrade failures resulting in the loss of their custom reports. Please do not forget to [backup before you upgrade](backup-custom-reports.md)!
 
 
-# Version 61.0 Release Details
 
 
 ### Product Enhancements
@@ -250,7 +245,6 @@ Version 60 brings some very exciting new features. Most notably the ability to t
 Several customers have recently reported upgrade failures resulting in the loss of their custom reports. Please do not forget to [backup before you upgrade](backup-custom-reports.md)!
 
 
-# Version 60.0 Release Details
 
 
 ### Product Enhancements
@@ -613,7 +607,6 @@ Several customers have recently reported upgrade failures resulting in the loss 
 
 ## Version 48.0 Oct. 14, 2024
 
-# Version 48.0 (AppSource Version 1043)
 Versions 47 and 48 were released to address a very specific error caused by a Microsoft API change. All customers must upgrade to version 48 to prevent sync issues.
 
 **Important Notes:**
@@ -646,7 +639,6 @@ Versions 47 and 48 were released to address a very specific error caused by a Mi
 
 ## Version 46.0 Sept. 17, 2024
 
-# Version 46.0 (AppSource Version 1041)
 Version 46 was released to address a very specific error caused by a Microsoft API bug that seems to only be affecting a single Azure data center in Europe but could spread to others regions.
 
 **Important Notes:**
@@ -679,7 +671,6 @@ Version 46 was released to address a very specific error caused by a Microsoft A
 
 ## Version 45.0 Sept. 15, 2024
 
-# Version 45.0 (AppSource Version 1040)
 Version 45 was released to address a very specific edge case that was discovered by one customer.
 
 **Important Notes:**
@@ -712,7 +703,6 @@ Version 45 was released to address a very specific edge case that was discovered
 
 ## Version 44.0 Aug. 31, 2024
 
-# Version 44.0 (AppSource Version 1039)
 Prior to version 44 we only showed application deployment status for devices which had a primary user. This was a design decision that was made very early in the development of BI for Intune. We did this to work around issues in the quality of the data provided by Intune. Specifically, it is not uncommon to see more than one installation status for a given app on a given device and those statuses may not be the same. In most cases it is impossible for an app to both succeed and fail. Our research indicated that the most likely "real" status was the one reported in the context of the primary user, so this was the one we decided to show to eliminate the confusion. Unfortunately, by design, not all devices have a primary user, so we had to change this behavior.
 
 **Important Notes:**
@@ -751,7 +741,6 @@ Prior to version 44 we only showed application deployment status for devices whi
 
 ## Version 42.0 July 23, 2024
 
-# Version 42.0 (AppSource Version 1037)
 This version introduces several new features and enhancements, focusing on Cloud PC management and Autopilot Enrollment. Notable additions include new pages for monitoring enrollment status and cloud provisioning, as well as comprehensive updates to data models with new categories and fields.
 
 **Important Notes:**
@@ -868,7 +857,6 @@ Select **Add permissions**.
 
 ## Version 41.0 June 17, 2024
 
-# Version 41.0 (AppSource Version 1036)
 BI for Intune Version 41.0, shown as version 1036 in AppSource, was released on June 17, 2024.
 
 
@@ -890,7 +878,6 @@ BI for Intune Version 41.0, shown as version 1036 in AppSource, was released on 
 
 ## Version 40.0 June 8, 2024
 
-# Version 40.0 (AppSource Version 1035)
 BI for Intune Version 40.0, shown as version 1035 in AppSource, was released on June 8, 2024. This version includes some modifications to our Windows custom inventory script. Customers should update to the latest version of the [custom inventory script](windows-inventory-collection-script.md).
 
 
@@ -915,7 +902,6 @@ Fixed "Last Logon" being blank.
 
 ## Version 39.0 May 13, 2024
 
-# Version 39.0 (AppSource Version 1034)
 BI for Intune Version 39.0, shown as version 1033 in AppSource, was released on May 13, 2024. This version introduces a new Delivery Optimization report, a new Windows 11 Readiness Report, and Windows Firewall status.
 
 
@@ -987,7 +973,6 @@ New "Device Firewall" category and fields in the data model. Fields include:
 
 ## Version 38.0 April 17, 2024
 
-# Version 38.0 (AppSource Version 1033)
 BI for Intune Version 38.0, shown as version 1033 in AppSource, was released on April 17, 2024.
 
 
@@ -1010,7 +995,6 @@ New fields added to the "Autopilot Deployment State" category. Fields include:
 
 ## Version 36.0 March 22, 2024
 
-# Version 36.0 (AppSource Version 1032)
 BI for Intune Version 36.0, shown as version 1032 in AppSource, was released on March 22, 2024.
 
 
@@ -1029,7 +1013,6 @@ BI for Intune Version 36.0, shown as version 1032 in AppSource, was released on 
 
 ## Version 35.0 March 11, 2024
 
-# Version 35.0 (AppSource Version 1031)
 BI for Intune Version 35.0, shown as version 1031 in AppSource, was released on March 11, 2024.
 
 Quick release to fix a bug affecting large environments.
@@ -1050,7 +1033,6 @@ Quick release to fix a bug affecting large environments.
 
 ## Version 34.0 March 4, 2024
 
-# Version 34.0 (AppSource Version 1030)
 BI for Intune Version 34.0, shown as version 1030 in AppSource, was released on March 4, 2024.
 
 This version introduces our custom inventory for macOS.
