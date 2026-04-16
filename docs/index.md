@@ -5,7 +5,7 @@ hide:
 ---
 
 <div class="hero-banner">
-  <h1>BI for Intune Documentation</h1>
+  <h1>BI for Intune <span class="hero-accent">Documentation</span></h1>
   <p>Comprehensive Power BI reporting for Microsoft Intune.</p>
 </div>
 
