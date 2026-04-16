@@ -701,7 +701,7 @@ html {
 
 .hero-banner {
   background: linear-gradient(90deg, #3322AB 0%, #454ACE 50%, #556DEB 100%);
-  padding: 5rem 1rem 3rem 1rem;
+  padding: 2rem 1rem 1.75rem 1rem;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-top: -1.5rem;
@@ -714,13 +714,13 @@ html {
 
 @media (min-width: 768px) {
   .hero-banner {
-    padding: 7rem 1.5rem 4rem 1.5rem;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-banner {
-    padding: 9rem 2rem 5rem 2rem;
+    padding: 3rem 2rem 2.5rem 2rem;
   }
 }
 
@@ -749,13 +749,12 @@ html {
 
 .hero-banner h1 {
   color: #ffffff !important;
-  font-size: 2.25rem;  /* text-4xl on mobile */
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.01em;
   margin-bottom: 0;
   border-bottom: none !important;
-  /* No max-width constraint — let the title breathe at any width */
 }
 
 /* Accent word in hero title — matches marketing site's text-brand-blue */
@@ -765,41 +764,41 @@ html {
 
 @media (min-width: 768px) {
   .hero-banner h1 {
-    font-size: 3rem;  /* text-5xl */
+    font-size: 2.25rem;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-banner h1 {
-    font-size: 3.75rem;  /* text-6xl */
+    font-size: 2.75rem;
   }
 }
 
 @media (max-width: 600px) {
   .hero-banner h1 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 }
 
 .hero-banner p {
   color: #d1d5db !important;  /* text-gray-300 */
-  font-size: 1.125rem;
-  line-height: 1.625;
-  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
   margin-bottom: 0;
-  /* No max-width — centered text, full width */
 }
 
 @media (min-width: 768px) {
   .hero-banner p {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    margin-top: 0.75rem;
   }
 }
 
 @media (max-width: 600px) {
   .hero-banner p {
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
   }
 }
 
@@ -1028,4 +1027,18 @@ body {
     font-size: 1.5rem;
     padding: 1.5rem 1rem 1.25rem 1rem;
   }
+}
+
+
+/* ── Fix sidebar positioning under the fixed banner ─────────────────
+   Material's default `.md-sidebar { position: sticky; top: 2.4rem }`
+   causes the sidebars to stick behind our 40px fixed banner.
+   Override so they stick directly below the banner, and adjust their
+   height so nothing gets cut off.
+   ──────────────────────────────────────────────────────────────────── */
+
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  top: 40px !important;
+  height: calc(100vh - 40px) !important;
 }
