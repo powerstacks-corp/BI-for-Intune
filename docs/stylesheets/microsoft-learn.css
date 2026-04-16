@@ -712,20 +712,7 @@ html {
   overflow: hidden;
 }
 
-/* Subtle vignette overlay matching the website's Hero component */
-.hero-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.15) 0%,
-    rgba(0, 0, 0, 0.05) 50%,
-    rgba(0, 0, 0, 0.15) 100%
-  );
-  pointer-events: none;
-}
-
+/* No vignette — we want the gradient to match the nav bars above exactly */
 .hero-banner > * {
   position: relative;
   z-index: 1;
@@ -925,21 +912,40 @@ html {
   opacity: 0.5;
 }
 
-/* ── Issue fixes (Apr 15 2026) ────────────────────────────────────── */
+/* ── Issue fixes (Apr 15 2026) — REVISED Apr 16 ───────────────────── */
 
-/* Make the global PowerStacks nav sticky so it stays visible when scrolling */
+/* Only the global PowerStacks nav (md-banner) stays sticky when scrolling.
+   md-header (search) and md-tabs (secondary nav) scroll up with the page. */
 .md-banner {
-  position: sticky;
-  top: 0;
-  z-index: 4;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10 !important;
 }
 
-/* Push the search header below the now-sticky banner (40px = banner height) */
+/* Override Material's default sticky behavior on md-header and md-tabs
+   so they scroll up with the page instead of staying pinned. */
 .md-header {
-  top: 40px !important;
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
 }
 
-/* Add top padding back to the main content area so it doesn't sit right against the header */
+.md-tabs {
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+}
+
+/* Prevent horizontal scroll from the .hero-banner 100vw trick.
+   IMPORTANT: use overflow-x: clip (not hidden) — `hidden` would break
+   position:sticky on the md-banner above. `clip` doesn't establish a
+   scroll container, so sticky keeps working. */
+.md-container {
+  overflow-x: clip;
+}
+
+/* Add top padding back to the main content area so regular (non-hero) pages
+   don't sit right against the nav above them */
 .md-content__inner {
   padding-top: 1.5rem !important;
 }
