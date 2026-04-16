@@ -77,7 +77,7 @@ html {
 
 /* ── Global nav bar — PowerStacks branded ── */
 .md-banner {
-  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%) !important;
+  background: linear-gradient(90deg, #3322AB 0%, #454ACE 50%, #556DEB 100%) !important;
   overflow: hidden !important;
 }
 
@@ -241,7 +241,7 @@ html {
 
 /* ── Header — show only search, hide branding ── */
 .md-header {
-  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%) !important;
+  background: linear-gradient(90deg, #3322AB 0%, #454ACE 50%, #556DEB 100%) !important;
   box-shadow: none !important;
 }
 
@@ -258,7 +258,7 @@ html {
 
 /* ── Navigation tabs — PowerStacks secondary bar ── */
 .md-tabs {
-  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
+  background: linear-gradient(90deg, #3322AB 0%, #454ACE 50%, #556DEB 100%);
 }
 
 [data-md-color-scheme="slate"] .md-tabs {
@@ -700,7 +700,7 @@ html {
 /* ── Hero banner — PowerStacks gradient, full-width flush with tabs ── */
 
 .hero-banner {
-  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
+  background: linear-gradient(90deg, #3322AB 0%, #454ACE 50%, #556DEB 100%);
   padding: 5rem 1.5rem 4rem 1.5rem;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
