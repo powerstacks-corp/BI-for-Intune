@@ -932,20 +932,27 @@ html {
 
 /* ── Issue fixes (Apr 15 2026) — REVISED Apr 16 ───────────────────── */
 
-/* Only the global PowerStacks nav (md-banner) stays sticky when scrolling.
-   md-header (search) and md-tabs (secondary nav) scroll up with the page.
+/* Keep the PowerStacks global nav always visible at the top of the viewport.
+   Using position: fixed (not sticky) because Material's layout creates
+   containing block contexts that break position:sticky on .md-banner.
+   Fixed positioning bypasses those contexts entirely.
 
-   IMPORTANT: Do NOT add overflow: hidden/clip/scroll/auto to html, body, or
-   any ancestor of .md-banner — that will break position:sticky. */
-.md-banner {
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 10 !important;
+   body gets padding-top: 40px to compensate for the fixed banner's height
+   (matches .md-banner__inner height in the Material theme). */
+body {
+  padding-top: 40px;
 }
 
-/* Override Material's default sticky behavior on md-header and md-tabs
-   so they scroll up with the page instead of staying pinned. */
+.md-banner {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 10 !important;
+  width: 100%;
+}
+
+/* md-header (search) and md-tabs (secondary nav) scroll with the page */
 .md-header {
   position: static !important;
   top: auto !important;
@@ -985,15 +992,16 @@ html {
   left: 50%;
   margin-left: -50vw;
 
-  /* Gradient hero styling */
+  /* Gradient hero styling — compact for article pages so it doesn't push
+     the sidebar nav + right TOC off-screen on page load */
   background: linear-gradient(90deg, #3322AB 0%, #454ACE 50%, #556DEB 100%);
   color: #ffffff !important;
   text-align: center;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  padding: 4rem 1rem 3rem 1rem;
+  padding: 2rem 1rem 1.75rem 1rem;
   margin-top: -1.5rem;
   margin-bottom: 2rem;
   border: none !important;
@@ -1003,21 +1011,21 @@ html {
 
 @media (min-width: 768px) {
   .md-typeset h1:first-of-type:not(.hero-banner h1) {
-    font-size: 3rem;
-    padding: 5rem 1.5rem 3.5rem 1.5rem;
+    font-size: 2.25rem;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .md-typeset h1:first-of-type:not(.hero-banner h1) {
-    font-size: 3.75rem;
-    padding: 6rem 2rem 4rem 2rem;
+    font-size: 2.75rem;
+    padding: 3rem 2rem 2.5rem 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .md-typeset h1:first-of-type:not(.hero-banner h1) {
-    font-size: 1.875rem;
-    padding: 2.5rem 1rem 2rem 1rem;
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem 1.25rem 1rem;
   }
 }
