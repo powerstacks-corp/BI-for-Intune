@@ -701,11 +701,34 @@ html {
 
 .hero-banner {
   background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
-  padding: 3rem 1rem;
+  padding: 5rem 1.5rem 4rem 1.5rem;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
+  margin-top: -1.5rem;
   margin-bottom: 2rem;
   box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle vignette overlay matching the website's Hero component */
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
 }
 
 [data-md-color-scheme="slate"] .hero-banner {
@@ -714,24 +737,65 @@ html {
 
 .hero-banner h1,
 .hero-banner p {
-  max-width: 61rem;
+  max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
 }
 
 .hero-banner h1 {
   color: #ffffff !important;
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
   border-bottom: none !important;
 }
 
+/* Accent word in hero title (second color, like the website hero) */
+.hero-banner h1 .hero-accent {
+  color: #6EC1E4;
+}
+
+/* Responsive: larger on desktop, tighter on mobile */
+@media (min-width: 1220px) {
+  .hero-banner {
+    padding: 6rem 1.5rem 5rem 1.5rem;
+  }
+  .hero-banner h1 {
+    font-size: 3.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-banner {
+    padding: 3rem 1rem 2.5rem 1rem;
+  }
+  .hero-banner h1 {
+    font-size: 1.875rem;
+  }
+}
+
 .hero-banner p {
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+@media (min-width: 1220px) {
+  .hero-banner p {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-banner p {
+    font-size: 1rem;
+  }
 }
 
 /* ── Quick link cards — feature cards ── */
@@ -883,96 +947,4 @@ html {
 .md-sidebar--primary,
 .md-sidebar--secondary {
   padding-top: 1.5rem;
-}
-
-/* ── Hero-style page titles (full-width, matches website Hero component) ── */
-
-/* Prevent horizontal scroll from the 100vw hero trick */
-html, body {
-  overflow-x: hidden;
-}
-
-/* Style the first h1 of each page as a full-width hero banner */
-.md-typeset h1:first-of-type {
-  /* Break out of the content column to full viewport width */
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-
-  /* Hero visuals */
-  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
-  color: #ffffff !important;
-  text-align: center;
-  font-size: 2.75rem;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  padding: 4rem 2rem 1rem 2rem;
-  margin-top: -1.5rem;
-  margin-bottom: 0;
-  border: none;
-  border-radius: 0;
-  overflow: hidden;
-}
-
-/* Subtle vignette overlay matching the website's hero styling */
-.md-typeset h1:first-of-type::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.15) 0%,
-    rgba(0, 0, 0, 0.05) 50%,
-    rgba(0, 0, 0, 0.15) 100%
-  );
-  pointer-events: none;
-}
-
-/* First paragraph after the hero h1 is styled as the hero subtitle */
-.md-typeset h1:first-of-type + p {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-
-  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
-  color: rgba(255, 255, 255, 0.88) !important;
-  text-align: center;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  padding: 0 2rem 3rem 2rem;
-  margin-top: 0;
-  margin-bottom: 2.5rem;
-}
-
-/* Dark mode: subtly different gradient endpoints */
-[data-md-color-scheme="slate"] .md-typeset h1:first-of-type,
-[data-md-color-scheme="slate"] .md-typeset h1:first-of-type + p {
-  background: linear-gradient(90deg, #1e1380 0%, #3a4ec4 100%);
-}
-
-/* Larger on desktop screens */
-@media (min-width: 1220px) {
-  .md-typeset h1:first-of-type {
-    font-size: 3.25rem;
-    padding: 5rem 2rem 1.25rem 2rem;
-  }
-  .md-typeset h1:first-of-type + p {
-    font-size: 1.375rem;
-    padding: 0 2rem 4rem 2rem;
-  }
-}
-
-/* Mobile: tighten up */
-@media (max-width: 600px) {
-  .md-typeset h1:first-of-type {
-    font-size: 1.875rem;
-    padding: 2.5rem 1.25rem 0.75rem 1.25rem;
-  }
-  .md-typeset h1:first-of-type + p {
-    font-size: 1rem;
-    padding: 0 1.25rem 2rem 1.25rem;
-  }
 }
