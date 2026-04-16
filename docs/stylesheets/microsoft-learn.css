@@ -1041,4 +1041,10 @@ body {
 .md-sidebar--secondary {
   top: 40px !important;
   height: calc(100vh - 40px) !important;
+  /* Stack above the hero banner. The hero uses width:100vw to break out of
+     the content column and visually covers the sidebar columns. Without a
+     z-index here, the hero (position:relative, later in DOM) wins the
+     stacking fight. z-index:5 sits below the fixed top banner (z-index:10)
+     but above the hero (auto). */
+  z-index: 5 !important;
 }
