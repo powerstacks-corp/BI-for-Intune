@@ -709,9 +709,9 @@ html {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
-/* Match marketing site's padding on md+ and lg+ screens */
 @media (min-width: 768px) {
   .hero-banner {
     padding: 7rem 1.5rem 4rem 1.5rem;
@@ -734,8 +734,8 @@ html {
   background: linear-gradient(90deg, #241880 0%, #4058C8 100%);
 }
 
-/* Shared container (centered in viewport) — left-align text within, like the
-   marketing site's Hero (container-narrow + max-w-3xl pattern) */
+/* Centered text with a comfortable max-width — avoids awkward line breaks
+   on long titles like "BI for SCCM Documentation" */
 .hero-banner h1,
 .hero-banner p {
   max-width: 72rem;
@@ -743,7 +743,7 @@ html {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -751,11 +751,11 @@ html {
   color: #ffffff !important;
   font-size: 2.25rem;  /* text-4xl on mobile */
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   margin-bottom: 0;
   border-bottom: none !important;
-  max-width: 48rem;  /* max-w-3xl, like the marketing site */
+  /* No max-width constraint — let the title breathe at any width */
 }
 
 /* Accent word in hero title — matches marketing site's text-brand-blue */
@@ -763,7 +763,6 @@ html {
   color: #6EC1E4;
 }
 
-/* Responsive: text-5xl at md (768px+), text-6xl at lg (1024px+) */
 @media (min-width: 768px) {
   .hero-banner h1 {
     font-size: 3rem;  /* text-5xl */
@@ -783,17 +782,17 @@ html {
 }
 
 .hero-banner p {
-  color: #d1d5db !important;  /* text-gray-300, matches marketing site subtitle */
-  font-size: 1.125rem;  /* text-lg */
-  line-height: 1.625;  /* leading-relaxed */
-  margin-top: 1.5rem;  /* mt-6 */
+  color: #d1d5db !important;  /* text-gray-300 */
+  font-size: 1.125rem;
+  line-height: 1.625;
+  margin-top: 1.5rem;
   margin-bottom: 0;
-  max-width: 42rem;  /* max-w-2xl */
+  /* No max-width — centered text, full width */
 }
 
 @media (min-width: 768px) {
   .hero-banner p {
-    font-size: 1.25rem;  /* text-xl */
+    font-size: 1.25rem;
   }
 }
 
@@ -934,8 +933,12 @@ html {
 /* ── Issue fixes (Apr 15 2026) — REVISED Apr 16 ───────────────────── */
 
 /* Only the global PowerStacks nav (md-banner) stays sticky when scrolling.
-   md-header (search) and md-tabs (secondary nav) scroll up with the page. */
+   md-header (search) and md-tabs (secondary nav) scroll up with the page.
+
+   IMPORTANT: Do NOT add overflow: hidden/clip/scroll/auto to html, body, or
+   any ancestor of .md-banner — that will break position:sticky. */
 .md-banner {
+  position: -webkit-sticky !important;
   position: sticky !important;
   top: 0 !important;
   z-index: 10 !important;
@@ -955,14 +958,6 @@ html {
   z-index: auto !important;
 }
 
-/* Prevent horizontal scroll from the .hero-banner 100vw trick.
-   IMPORTANT: use overflow-x: clip (not hidden) — `hidden` would break
-   position:sticky on the md-banner above. `clip` doesn't establish a
-   scroll container, so sticky keeps working. */
-.md-container {
-  overflow-x: clip;
-}
-
 /* Add top padding back to the main content area so regular (non-hero) pages
    don't sit right against the nav above them */
 .md-content__inner {
@@ -972,4 +967,57 @@ html {
 .md-sidebar--primary,
 .md-sidebar--secondary {
   padding-top: 1.5rem;
+}
+
+
+/* ── Article page hero (applies to every page's first h1) ─────────────
+   Homepage uses <div class="hero-banner"> with its own styling. Article
+   pages just have a plain markdown heading that becomes <h1>. This rule
+   makes that first h1 render as a matching gradient hero too, so every
+   docs page has the same branded look.
+   We EXCLUDE h1s inside .hero-banner (they're already styled by that rule).
+   ──────────────────────────────────────────────────────────────────── */
+
+.md-typeset h1:first-of-type:not(.hero-banner h1) {
+  /* Break out to full viewport width */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+
+  /* Gradient hero styling */
+  background: linear-gradient(90deg, #3322AB 0%, #454ACE 50%, #556DEB 100%);
+  color: #ffffff !important;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  padding: 4rem 1rem 3rem 1rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  border: none !important;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .md-typeset h1:first-of-type:not(.hero-banner h1) {
+    font-size: 3rem;
+    padding: 5rem 1.5rem 3.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .md-typeset h1:first-of-type:not(.hero-banner h1) {
+    font-size: 3.75rem;
+    padding: 6rem 2rem 4rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .md-typeset h1:first-of-type:not(.hero-banner h1) {
+    font-size: 1.875rem;
+    padding: 2.5rem 1rem 2rem 1rem;
+  }
 }
