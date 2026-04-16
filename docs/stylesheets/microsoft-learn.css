@@ -139,11 +139,13 @@ html {
 }
 
 .ps-global-nav__site-links a {
-  color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
   text-decoration: none !important;
-  padding: 0.35rem 0.65rem;
+  padding: 0.45rem 0.85rem;
   border-radius: 4px;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   transition: background-color 0.15s, color 0.15s;
   white-space: nowrap;
 }
@@ -883,21 +885,34 @@ html {
   padding-top: 1.5rem;
 }
 
-/* ── Hero-style page titles (matches website Hero component) ────────── */
+/* ── Hero-style page titles (full-width, matches website Hero component) ── */
 
-/* Style the first h1 of each page as a hero block with gradient background */
+/* Prevent horizontal scroll from the 100vw hero trick */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Style the first h1 of each page as a full-width hero banner */
 .md-typeset h1:first-of-type {
+  /* Break out of the content column to full viewport width */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+
+  /* Hero visuals */
   background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
   color: #ffffff !important;
-  font-size: 2.25rem;
+  text-align: center;
+  font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.01em;
-  padding: 2rem 2rem;
-  margin: -1.5rem -1.5rem 2rem -1.5rem;
-  border-radius: 8px;
+  padding: 4rem 2rem 1rem 2rem;
+  margin-top: -1.5rem;
+  margin-bottom: 0;
   border: none;
-  position: relative;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -915,25 +930,49 @@ html {
   pointer-events: none;
 }
 
+/* First paragraph after the hero h1 is styled as the hero subtitle */
+.md-typeset h1:first-of-type + p {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+
+  background: linear-gradient(90deg, #3221AA 0%, #5670F0 100%);
+  color: rgba(255, 255, 255, 0.88) !important;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0 2rem 3rem 2rem;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
 /* Dark mode: subtly different gradient endpoints */
-[data-md-color-scheme="slate"] .md-typeset h1:first-of-type {
+[data-md-color-scheme="slate"] .md-typeset h1:first-of-type,
+[data-md-color-scheme="slate"] .md-typeset h1:first-of-type + p {
   background: linear-gradient(90deg, #1e1380 0%, #3a4ec4 100%);
 }
 
-/* Slightly larger on bigger screens */
+/* Larger on desktop screens */
 @media (min-width: 1220px) {
   .md-typeset h1:first-of-type {
-    font-size: 2.75rem;
-    padding: 2.5rem 2.5rem;
+    font-size: 3.25rem;
+    padding: 5rem 2rem 1.25rem 2rem;
+  }
+  .md-typeset h1:first-of-type + p {
+    font-size: 1.375rem;
+    padding: 0 2rem 4rem 2rem;
   }
 }
 
 /* Mobile: tighten up */
 @media (max-width: 600px) {
   .md-typeset h1:first-of-type {
-    font-size: 1.75rem;
-    padding: 1.5rem 1.25rem;
-    margin: -1rem -1rem 1.5rem -1rem;
-    border-radius: 6px;
+    font-size: 1.875rem;
+    padding: 2.5rem 1.25rem 0.75rem 1.25rem;
+  }
+  .md-typeset h1:first-of-type + p {
+    font-size: 1rem;
+    padding: 0 1.25rem 2rem 1.25rem;
   }
 }
