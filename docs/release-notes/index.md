@@ -217,7 +217,7 @@ Several customers have recently reported upgrade failures resulting in the loss 
 - Added a new parameter "**AzureAD Application Assignment Enable"** *(Default:**TRUE**)* to disable **"Application Assignment"** data collection in environments where the Microsoft Graph API intermittently returns 503 or 504 errors.
 - Fixed issue in **"Autopilot Enrollment"** where some Autopilot devices were missing their assigned profiles.
 - Resolved issues with parameters **"AzureAD Group Members Filter Starts With"** and **"AzureAD Group Members Nested Crawler Enable"**, which previously caused timeouts.
-- Updated the [**Custom Inventory for Windows**](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) script to resolve a bug in the driver matching process.
+- Updated the [**Custom Inventory for Windows**](https://github.com/powerstacks-corp/Windows-Custom-Inventory) script to resolve a bug in the driver matching process.
 
 ### Semantic Model Changes
 
@@ -292,7 +292,7 @@ Several customers have recently reported upgrade failures resulting in the loss 
 ## Example Report of Cumulative Updates Installed Per Day
 
 
-This report has been added to the Windows Update for Business custom report available on [GitHub](https://github.com/PowerStacks-BI/BI-for-Intune/tree/main/Windows%20Update%20for%20Business%20Reports). For more information, please see [this blog](https://powerstacks.com/windows-update-for-business-reports-reimagined-a-simpler-way-to-analyze-updates/).
+This report has been added to the Windows Update for Business custom report available on [GitHub](https://github.com/powerstacks-corp/BI-for-Intune/tree/main/Windows%20Update%20for%20Business%20Reports). For more information, please see [this blog](https://powerstacks.com/windows-update-for-business-reports-reimagined-a-simpler-way-to-analyze-updates/).
 ![windows update progression](../images/windows_update_progression-1024x566.png)
 
 ---
@@ -352,13 +352,13 @@ Several customers have recently reported upgrade failures resulting in the loss 
 ## Below Are the Changes in Version 58.0
 
 
-- **New Report Pages:** (**Note**: To copy the new pages to your custom reports see the article how to copy pages.)New page: **Driver Inventory** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.)The new **Driver Inventory** page provides a means of reporting on the installed drivers on Windows devices.
-New page: **Microsoft 365** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.)
+- **New Report Pages:** (**Note**: To copy the new pages to your custom reports see the article how to copy pages.)New page: **Driver Inventory** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/powerstacks-corp/Windows-Custom-Inventory) for Windows.)The new **Driver Inventory** page provides a means of reporting on the installed drivers on Windows devices.
+New page: **Microsoft 365** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/powerstacks-corp/Windows-Custom-Inventory) for Windows.)
 - The new **Microsoft 365** page and corresponding semantic model object use an unsupported Microsoft API to report on the security update compliance of installed Microsoft 365 updates. There’s no guarantee that Microsoft will not remove the API.
-New page: **Warranty** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.)
+New page: **Warranty** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/powerstacks-corp/Windows-Custom-Inventory) for Windows.)
 - Reports on the warranty status of Dell, Lenovo, and Getac computers. See the Collect Warranty Data article for more information.
 **New Features:**
-- **Additions to the semantic model:**Added new object: **Driver Inventory** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.) New fields in the Driver Inventory object include:Driver Inventory Classification
+- **Additions to the semantic model:**Added new object: **Driver Inventory** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/powerstacks-corp/Windows-Custom-Inventory) for Windows.) New fields in the Driver Inventory object include:Driver Inventory Classification
 - Driver Inventory Count
 - Driver Inventory Description
 - Driver Inventory Hardware ID

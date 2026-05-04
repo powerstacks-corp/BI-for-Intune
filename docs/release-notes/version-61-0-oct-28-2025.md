@@ -28,7 +28,7 @@ Several customers have recently reported upgrade failures resulting in the loss 
 - Added a new parameter "**AzureAD Application Assignment Enable"** *(Default:**TRUE**)* to disable **"Application Assignment"** data collection in environments where the Microsoft Graph API intermittently returns 503 or 504 errors.
 - Fixed issue in **"Autopilot Enrollment"** where some Autopilot devices were missing their assigned profiles.
 - Resolved issues with parameters **"AzureAD Group Members Filter Starts With"** and **"AzureAD Group Members Nested Crawler Enable"**, which previously caused timeouts.
-- Updated the [**Custom Inventory for Windows**](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) script to resolve a bug in the driver matching process.
+- Updated the [**Custom Inventory for Windows**](https://github.com/powerstacks-corp/Windows-Custom-Inventory) script to resolve a bug in the driver matching process.
 
 ### Semantic Model Changes
 
