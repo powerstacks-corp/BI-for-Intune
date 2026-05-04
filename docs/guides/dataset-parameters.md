@@ -61,7 +61,7 @@ The BI for Intune dataset contains some parameters that must be configured to sy
 
 1. Required configuration: Yes
 1. Default value: Blank
-1. This should be the API Key that you received from us after completing the [**Request a Trial Key**](http://ec2-44-233-222-61.us-west-2.compute.amazonaws.com/wordpress/index.html%3Fp=7938.html) form.
+1. This should be the API Key that you received from us after completing the [**Request a Trial Key**](https://docs.powerstacks.com/shared/request-a-license/) form.
 ![](../images/api_key.png)
 ### Step 7: Enter the Tenant ID
 				AzureAD TenantID

@@ -352,7 +352,7 @@ Several customers have recently reported upgrade failures resulting in the loss 
 ## Below Are the Changes in Version 58.0
 
 
-- **New Report Pages:** (**Note**: To copy the new pages to your custom reports see the article [how to copy pages](http://ec2-52-40-133-66.us-west-2.compute.amazonaws.com/wordpress/how-to-copy-pages/).)New page: **Driver Inventory** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.)The new **Driver Inventory** page provides a means of reporting on the installed drivers on Windows devices.
+- **New Report Pages:** (**Note**: To copy the new pages to your custom reports see the article how to copy pages.)New page: **Driver Inventory** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.)The new **Driver Inventory** page provides a means of reporting on the installed drivers on Windows devices.
 New page: **Microsoft 365** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.)
 - The new **Microsoft 365** page and corresponding semantic model object use an unsupported Microsoft API to report on the security update compliance of installed Microsoft 365 updates. There’s no guarantee that Microsoft will not remove the API.
 New page: **Warranty** (**Note**: Requires updated version of the [Custom Inventory Script](https://github.com/PowerStacks-BI/Windows-Custom-Inventory) for Windows.)
