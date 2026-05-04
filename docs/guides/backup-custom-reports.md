@@ -9,7 +9,12 @@ We strongly advise customers to always backup  their custom reports before perf
 
 1. The user executing these steps should be an administrator of the BI for Intune workspace(s).
 1. A second install of BI for Intune to be used as a backup workspace. You do not need to configure the dataset parameters, this workspace is simply a place-holder to store a copy of your custom reports.
-![github mark2](../images/github-mark2-80x80.png)
+
+The PowerShell scripts referenced below are available on GitHub:
+
+[![github mark2](../images/github-mark2-80x80.png)](https://github.com/powerstacks-corp/PowerStacks_Report_Backup)
+
+*[PowerStacks Report Backup repository](https://github.com/powerstacks-corp/PowerStacks_Report_Backup)*
 
 ### Step 1: Save the PowerShell script
 

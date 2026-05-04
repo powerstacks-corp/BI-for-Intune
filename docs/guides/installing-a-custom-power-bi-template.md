@@ -14,8 +14,10 @@ In addition to accessing our curated templates, you’ll have the opportunity to
 Note that these custom templates are provided "as-is," without warranty or formal support. This allows us to keep this repository a dynamic and collaborative resource for everyone involved.
 
 We’re thrilled to offer this new way to enhance your BI for Intune experience and look forward to seeing how these templates help you unlock even greater value from your Intune data. Let’s get started!
-![github mark2](../images/github-mark2-80x80.png)
-*Templates Repository*
+
+[![github mark2](../images/github-mark2-80x80.png)](https://github.com/powerstacks-corp/BI-for-Intune/tree/main)
+
+*[Templates Repository](https://github.com/powerstacks-corp/BI-for-Intune/tree/main)*
 
 ### Step 1: Download and open the template
 
