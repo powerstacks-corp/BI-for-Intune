@@ -103,6 +103,7 @@ nav:
     - Create Backup Workspace: guides/create-backup-workspace.md
   - Customization:
     - Installing a Custom Power BI Template: guides/installing-a-custom-power-bi-template.md
+    - Modern UI Templates: guides/modern-ui-templates.md
     - How to Edit BI for Intune Reports: guides/how-to-edit-bi-for-intune-reports.md
     - How to Create Popup Box Visuals: guides/how-to-create-popup-box-visuals.md
   - FAQ: guides/faq.md
